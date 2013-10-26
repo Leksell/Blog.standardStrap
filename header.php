@@ -47,7 +47,7 @@
             <?php } } ?>
 			
 		</div>
-		<a id="nav-open-btn" href="#nav"><i class="icon-reorder icon-large"></i></a>
+		<a id="nav-open-btn" href="#nav"><i class="fa fa-reorder fa-lg"></i></a>
 
 		<!-- Collect the nav links, forms, and other content for toggling -->
 		<div class="collapse navbar-collapse navbar-ex1-collapse">
@@ -71,7 +71,7 @@
 		</header> <!-- end header -->
 		
 		 <nav id="nav" role="navigation">
-		 <a class="" id="nav-close-btn" href="#top"><i class="icon-remove-sign icon-2x"></i></a>
+		 <a class="" id="nav-close-btn" href="#top"><i class="fa fa-times-circle-o fa-2x"></i></a>
         <div class="block is-active">
         
             <div class="margin-sidebar mobile-navbar">

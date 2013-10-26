@@ -535,6 +535,25 @@ font-size: 12px;	font-family:'Raleway', sans-serif!important;}
 .footer-holder h4.widgettitle  {color:#fff; font-weight: 200 !important;}
 
 
+/*Scroll to top*/
+
+.to-top {
+    display: none;
+    position: fixed;
+    bottom: 40px;
+    right: 15px;
+   /* background-image: url('http://geniuscarrier.com/images/up.png');
+    background-repeat: no-repeat;*/
+    opacity: 0.7;
+    color:#232323;
+ }
+
+
+
+
+
+
+
 /* =Archive, Meta, Search etc..
 -------------------------------------------------------------- */
 .meta-main {
@@ -1018,9 +1037,4 @@ hr.space {
 		transform:translate3d(0,0,0);
 	}
 }
-
-
-
-
-
 

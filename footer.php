@@ -31,15 +31,22 @@
 				<div class="credits">&copy; Copyright <?php echo date("Y") ?> by Frederik Leksell</div>			
 				</div><!-- /.container -->
 			</div><!-- /#sub-floor -->
-
+		
+		<a href="#"><i class="fa fa-arrow-circle-up fa-3x to-top" id="toTop"></i></a>
 		
 		<?php wp_footer(); // js scripts are inserted using this function ?>
-		
+	
 			</div>
 <!--/#inner-wrap-->
 </div>
 <!--/#outer-wrap-->
+
 			<?php wp_register_script( $handle, $src, $deps, $ver, $in_footer ); ?>
+		<script type="text/javascript">
+			jQuery(function() {
+					jQuery("#toTop").scrollToTop(800);
+				});
+		</script>
 	</body>
 
 </html>

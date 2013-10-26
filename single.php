@@ -15,18 +15,18 @@
 							
 				<hr class="meta-hr">
 				  	<section class="post-meta meta-options">
-				                <i class="icon-time"></i>
+				                <i class="fa fa-clock-o"></i>
 				                <?php if( strlen( trim( get_the_title() ) ) == 0 ) { ?>
 									<a href="<?php the_permalink(); ?>" rel="bookmark" title="<?php printf( esc_attr__( '%s', 'standard' ), the_title_attribute( 'echo=0' ) ); ?>"><span class="the-time updated"> 
 									<?php the_time( get_option( 'date_format' ) ); ?></span></a>
 								<?php } else { ?>
 									<span class="post-last-updated">
-									<?php echo (''), human_time_diff(get_the_modified_date('U'), current_time('timestamp'));?> ago&nbsp;&nbsp; <i class="icon-user"></i> <?php the_author_posts_link(); ?>
+									<?php echo (''), human_time_diff(get_the_modified_date('U'), current_time('timestamp'));?> ago&nbsp;&nbsp; <i class="fa fa-user"></i> <?php the_author_posts_link(); ?>
 									</span>
 								<?php if ( comments_open() ) : ?>
                         <span class="comments-link">
                         <span class="mdash">&nbsp;&nbsp;</span>
-                    <?php comments_popup_link(__('<i class="icon-comments"></i> 0', 'responsive'), __('<i class="icon-comments"></i> 1', 'responsive'), __('<i class="icon-comments"></i> %', 'responsive')); ?>
+                    <?php comments_popup_link(__('<i class="fa fa-comments"></i> 0', 'responsive'), __('<i class="fa fa-comments"></i> 1', 'responsive'), __('<i class="fa fa-comments"></i> %', 'responsive')); ?>
                         </span>
                         
                     <?php endif; ?>
@@ -55,14 +55,14 @@
 							// only show edit button if user has permission to edit posts
 							if( $user_level > 0 ) { 
 							?>
-							<a href="<?php echo get_edit_post_link(); ?>" class="btn btn-success edit-post"><i class="icon-pencil icon-white"></i> <?php _e("Edit post","standardStrap"); ?></a>
+							<a href="<?php echo get_edit_post_link(); ?>" class="btn btn-success edit-post"><i class="fa fa-pencil"></i> <?php _e("Edit post","standardStrap"); ?></a>
 							<?php } ?>
 							
 						</footer> <!-- end article footer -->
 					 
 					 <hr class="meta-hr meta-hr-margin">
 								<section class="post-meta-bottom meta-options">
-									<i class="icon-tags"></i> <?php the_tags('<span class="tags-title">' . __("","standardStrap") . '</span> ', ', ',' '); ?>
+									<i class="fa fa-tags"></i> <?php the_tags('<span class="tags-title">' . __("","standardStrap") . '</span> ', ', ',' '); ?>
 								</section>
 					 
 					</article> <!-- end article -->
@@ -102,7 +102,7 @@
 						          
 						        <div class="relatedheading">  
 						            <a  rel="external" href="<? the_permalink()?>">  
-										<i class="icon-angle-right float-left"></i><div class="related-h3 h3 "><?php the_title(); ?></div> 
+										<i class="fa fa-angle-right float-left"></i><div class="related-h3 h3 "><?php the_title(); ?></div> 
 						            </a>  
 						        </div>  
 						          

@@ -36,6 +36,9 @@ add_theme_support( 'custom-background');
 // Register Login Logo
 require_once('functions/login-logo.php');
 
+// Redirect Manager
+require_once('functions/Redirect-Manager/redirect-manager.php');
+
 /*
 // Bootstrap carousel !!! Har problem med featured image i Admin posts
 require_once('functions/bootstrap-carousel.php');
@@ -51,7 +54,7 @@ require_once('functions/social-icons.php');
 add_action( 'wp_enqueue_scripts', 'prefix_enqueue_awesome' );
 
 function prefix_enqueue_awesome() {
-wp_enqueue_style( 'prefix-font-awesome', '//netdna.bootstrapcdn.com/font-awesome/3.2.0/css/font-awesome.min.css', array(), '3.2.0' );
+wp_enqueue_style( 'prefix-font-awesome', '//netdna.bootstrapcdn.com/font-awesome/4.0.0/css/font-awesome.min.css', array(), '4.0.0' );
 }
 
 
@@ -64,18 +67,22 @@ function bootstrap_scripts()
 	// Register the scripts for this theme:
     wp_register_script( 'bootstrap-script', get_template_directory_uri() . '/library/js/bootstrap.js', array( 'jquery' ) );
     wp_register_script( 'modernizr-script', get_template_directory_uri() . '/library/js/modernizr.js', array( 'jquery' ) );
-/* 	wp_register_script( 'highlight-script', get_template_directory_uri() . '/library/js/highlight.pack.js', array( 'jquery' ) ); */
+    wp_register_script( 'scrolltotop-script', get_template_directory_uri() . '/library/js/jquery.scrollToTop.js', array( 'jquery' ) );
+    // wp_register_script( 'jquery-ui' , 'https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.16/jquery-ui.min.js' );
 	
 
 	//  enqueue the script:
 	wp_enqueue_script( 'bootstrap-script' );
 	wp_enqueue_script( 'modernizr-script' );
-/* 	wp_enqueue_script( 'highlight-script' ); */
+	wp_enqueue_script( 'scrolltotop-script' );
+ //  wp_enqueue_script( 'jquery-ui' );
 	
 }
 add_action( 'wp_enqueue_scripts', 'bootstrap_scripts' );
 add_action( 'wp_enqueue_scripts', 'modernizr-script' );
-/* add_action( 'wp_enqueue_scripts', 'offcanvas-script' ); */
+add_action( 'wp_enqueue_scripts', 'scrolltotop-script' );
+// add_action( 'wp_enqueue_scripts', 'jquery-ui' );
+
 
 
 
@@ -193,7 +200,6 @@ function my_save_extra_profile_fields( $user_id ) {
 /********* END USER Profile extnd*****/
 
 
-/********* Bootstrap Scortcodes *****/
 
 
 /************* ACTIVE SIDEBARS ********************/
