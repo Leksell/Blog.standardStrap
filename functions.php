@@ -193,6 +193,7 @@ function my_save_extra_profile_fields( $user_id ) {
 /********* END USER Profile extnd*****/
 
 
+/********* Bootstrap Scortcodes *****/
 
 
 /************* ACTIVE SIDEBARS ********************/
