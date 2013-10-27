@@ -118,6 +118,11 @@ function new_excerpt_more( $more ) {
 }
 add_filter( 'excerpt_more', 'new_excerpt_more' );
 
+/************* Post Formats ********************/
+
+add_theme_support( 'post-formats', array( 'status', 'quote', 'image', 'link', ) );
+// add post-formats to post_type 'page'
+add_post_type_support( 'content', 'post-formats' );
 
 
 

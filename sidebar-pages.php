@@ -1,5 +1,5 @@
 
- <div id="default-sidebar" class="sidebar col-md-3 offcanvas-diplay-none" role="complementary">
+     <div id="default-sidebar" class="sidebar col-md-3 offcanvas-diplay-none" role="complementary">
 			<div class="margin-sidebar">
 				<?php if ( is_active_sidebar( 'sidebar2' ) ) : ?>
 

@@ -40,31 +40,31 @@ h1, h1 a, h1 a:visited {
 	line-height: 45px;
 }
 
-h2, h2 a, h1 a:visited {
+h2, h2 a, h2 a:visited {
 	color:#232323;
 	font-weight:100!important;
 	font-family:'Raleway', sans-serif!important;
 }
 
-h3, h3 a, h1 a:visited {
+h3, h3 a, h3 a:visited {
 	color:#232323;
 	font-weight:400!important;
 	font-family:'Raleway', sans-serif!important;
 }
 
-h4, h4 a, h1 a:visited {
+h4, h4 a, h4 a:visited {
 	color:#232323;
 	font-weight:400!important;
 	font-family:'Raleway', sans-serif!important;
 }
 
-h5, h5 a, h1 a:visited {
+h5, h5 a, h5 a:visited {
 	color:#A9D300;
 	font-style:italic;
 	font-family:'Raleway', sans-serif!important;
 }
 
-h6, h6 a, h1 a:visited {
+h6, h6 a, h6 a:visited {
 	color:#232323;
 	font-style:italic;
 	font-family:'Raleway', sans-serif!important;
@@ -550,8 +550,12 @@ font-size: 12px;	font-family:'Raleway', sans-serif!important;}
 
 
 
-
-
+/* =Post formats
+-------------------------------------------------------------- */
+.format-link .entry-title {position:relative;bottom:40px; left:50px;}
+.formatlink { max-height:50px;}
+h1.quote {padding-left:30px;}
+.show-avatar .avatar {float:left; margin-right:15px; margin-bottom:15px; border-radius:50px;}
 
 
 /* =Archive, Meta, Search etc..
@@ -876,6 +880,15 @@ hr.space {
 .wp-post-image {
 	display:none;
 } 
+
+/* =Post formats
+-------------------------------------------------------------- */
+.format-link .entry-title {position:relative;bottom:25px!important; left:40px!important;}
+.formatlink { max-height:35px!important;}
+.format-link {font-size:30px;}
+h1.quote {padding-left:20px!important;}.
+.quote-icons {font-size:30px!important;}
+.show-avatar .avatar {float:left; margin-right:10px; margin-bottom:10px; border-radius:50px; height:50px; width:50px;}
 
 /*----Buttons---*/
 .btn-post {
