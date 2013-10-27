@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 			
-			<div class="row">
+			<div class="row row-offcanvas row-offcanvas-right">
 			
 				<div id="main" class="col-md-9 clearfix" role="main">
 
@@ -42,13 +42,13 @@
 					
 
 					</div> <!-- end page-main -->
-					<div class="page-main">
-						<!--- Share Buttons here  ---->
-						<?php echo sharing_display(); ?>
-					</div> <!-- end #main -->
+					
+						<!--- Share Buttons here -->
+						<?php if ( function_exists( 'sharing_display' ) ) { echo '<div class="page-main">' . sharing_display() . '</div>' ; } ?>
+					
 				</div> <!-- end #main -->
     
-				<?php get_sidebar( 'pages' ); // sidebar-pages ?>
+				<?php get_sidebar('pages'); // sidebar-pages ?>
     </div>
 			</div> <!-- end #content -->
 

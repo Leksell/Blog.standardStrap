@@ -68,10 +68,8 @@
 					</article> <!-- end article -->
 					</div> <!-- end #main -->
 					
-					<div class="single-main">
-						<!--- Share Buttons here  ---->
-						<?php echo sharing_display(); ?>
-					</div> <!-- end #main -->
+						<!--- Share Buttons here -->
+						<?php if ( function_exists( 'sharing_display' ) ) { echo '<div class="page-main">' . sharing_display() . '</div>' ; } ?>
 					
 					
 					<div class="single-main">
@@ -120,7 +118,7 @@
 					<div class="single-main">
 					
 					<?php comments_template('',true); ?>
-					</div> <!-- end single-main--->
+					</div> <!-- end single-main -->
 					<?php endwhile; ?>			
 					
 					<?php else : ?>
