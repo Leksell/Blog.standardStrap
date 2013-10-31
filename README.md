@@ -7,6 +7,18 @@ This is a blog version of my standardStrap starter theme.
 
 Still lots of things to get done before it is completed.
 
+Facts:
+-Bootstrap 3
+-Page templates
+-Post Formats
+-Admin panel with some setteings, will keep it clean.
+-Bootstrap Chort codes
+-Redirect options for smooth changes.
+-Portfolio (will be in version 2)
+-Icon fonts
+-related posts
+-And lost more.
+
 
 To Do
 --------------------------------------------------------------------------------------</br>
