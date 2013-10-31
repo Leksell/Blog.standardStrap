@@ -20,7 +20,7 @@ Facts:
 -And lost more.
 
 
-To Do
+To Do V.1
 --------------------------------------------------------------------------------------</br>
 
 DONE - Clean Design
@@ -43,27 +43,36 @@ DONE - Redirect function for smooth team/parmalink changes etc.
 
 DONE - Off canvas menu that uses widgets instead of menu.
 
+DONE - Custom Post Formats
+
 Off Canvas menu widget
 
-Translation possibility (Any one interested to help with this?)
-
-PRE and CODE Syntax integration.
-
 Total cleanup before version 1.0
-
-SharePoint Section, Wordpress Section, Recepi section (My private blog)
 
 GitHub Integration
 
 Good SEO and Tools
 
-Bootstrap 3 Short codes
+Continues scroll (Use JetPack)
 
-Custom Post Formats
+
+
+
+
+Things for Version 2.0
+________________________________________________________________________________________
+
+Integrated Bootstrap 3 Short codes
+
+Theme Translation possibility (Any one interested to help with this?)
+
+Child theme support
+
+PRE and CODE Syntax integration.
 
 Portfolio/Projects, custom post type
 
-Continues scroll (Use JetPack)
+
 
 
 
