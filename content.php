@@ -30,6 +30,10 @@
                         </a>
                     <?php endif; ?>
             <?php } ?>
+           
+            <?php if ( function_exists( 'sharing_display' ) ) remove_filter( 'the_content', 'sharing_display', 19 ); ?>
+		<?php if ( function_exists( 'sharing_display' ) ) remove_filter( 'the_excerpt', 'sharing_display', 19 ); ?>
+		
 	  	<?php the_content('<button type="button" class="btn btn-primary btn-xs btn-post">Read more</button>'); ?>
 	  	
 	  	<hr class="meta-hr">

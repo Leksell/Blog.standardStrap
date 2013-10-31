@@ -4,6 +4,22 @@
 		"selected_items":
 		[
 			[
+				"the_p",
+				"the_post_thumbnail"
+			],
+			[
+				"get_post_th",
+				"get_the_post_thumbnail"
+			],
+			[
+				"p",
+				"php"
+			],
+			[
+				"op",
+				"opacity"
+			],
+			[
 				"bs__",
 				"bs_plugin_options"
 			],
@@ -27,6 +43,57 @@
 	},
 	"buffers":
 	[
+		{
+			"file": "content-image.php",
+			"settings":
+			{
+				"buffer_size": 1382,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "content-status.php",
+			"settings":
+			{
+				"buffer_size": 1400,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "content.php",
+			"settings":
+			{
+				"buffer_size": 1970,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "functions.php",
+			"settings":
+			{
+				"buffer_size": 8274,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "style.css",
+			"settings":
+			{
+				"buffer_size": 20910,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "Blog.standardStrap\n==================\n\nstandardStrap Blog Theme\n\nThis is a blog version of my standardStrap starter theme.\n\nStill lots of things to get done before it is completed.\n\n\nTo Do\n--------------------------------------------------------------------------------------</br>\n\nDONE - Clean Design\n\nDONE - Related posts\n\nDONE - icon fonts\n\nDONE - Back to top button for mobile terminals\n\nDONE - Share Buttons (Use JetPack to make it more standard)\n\nDONE - Show Tags on posts\n\nDONE - Featured imge on pages and post\n\nDONE - Pages: Right Widget, Full Width, Landing page\n\nDONE - Redirect function for smooth team/parmalink changes etc.\n\nDONE - Off canvas menu that uses widgets instead of menu.\n\nOff Canvas menu widget\n\nTranslation possibility (Any one interested to help with this?)\n\nPRE and CODE Syntax integration.\n\nTotal cleanup before version 1.0\n\nSharePoint Section, Wordpress Section, Recepi section (My private blog)\n\nGitHub Integration\n\nGood SEO and Tools\n\nBootstrap 3 Short codes\n\nCustom Post Formats\n\nPortfolio/Projects, custom post type\n\nContinues scroll (Use JetPack)\n\n\n\nKnow problems\n----------------------------------------------------------------------------------------\n\nSOLVED - Off Canvas not working on pages\n\n\n\n\n\nOBS! Not recommended for use on a production/live site as is!\n",
+			"file": "README.md",
+			"file_size": 1298,
+			"file_write_time": 1382851621000000,
+			"settings":
+			{
+				"buffer_size": 1298,
+				"line_ending": "Unix"
+			}
+		}
 	],
 	"build_system": "",
 	"command_palette":
@@ -76,9 +143,44 @@
 	},
 	"file_history":
 	[
-		"/Volumes/Source-1/Sites/dev.frederik.se/wp-content/themes/Frederik/functions.php",
-		"/Users/Frederik/Sites/standardStrap/wp-content/themes/Blog.standardStrap/style.css",
+		"/Users/Frederik/Sites/standardStrap/wp-content/themes/Blog.standardStrap/content-quote.php",
+		"/Users/Frederik/Sites/standardStrap/wp-content/themes/Blog.standardStrap/content-video.php",
+		"/Users/Frederik/Sites/standardStrap/wp-content/themes/Blog.standardStrap/content-link.php",
+		"/Users/Frederik/Sites/standardStrap/wp-content/themes/Blog.standardStrap/index_Backup.php",
+		"/Users/Frederik/Sites/standardStrap/wp-content/themes/Blog.standardStrap/footer.php",
+		"/Users/Frederik/Sites/standardStrap/wp-content/themes/Blog.standardStrap/content.php",
 		"/Users/Frederik/Sites/standardStrap/wp-content/themes/Blog.standardStrap/index.php",
+		"/Users/Frederik/Sites/standardStrap/wp-content/themes/Blog.standardStrap/functions.php",
+		"/Users/Frederik/Sites/standardStrap/wp-content/themes/Blog.standardStrap/postformat.php",
+		"/Users/Frederik/Sites/standardStrap/wp-content/themes/Blog.standardStrap/postformat-image.php",
+		"/Users/Frederik/Sites/standardStrap/wp-content/themes/Blog.standardStrap/post-image.php",
+		"/Users/Frederik/Sites/standardStrap/wp-content/themes/Blog.standardStrap/post.php",
+		"/Users/Frederik/Sites/standardStrap/wp-content/themes/Blog.standardStrap/content-image.php",
+		"/Users/Frederik/Sites/standardStrap/wp-content/themes/Blog.standardStrap/content-standard.php",
+		"/Users/Frederik/Sites/standardStrap/wp-content/themes/Blog.standardStrap/index_Backup.txt",
+		"/Users/Frederik/Sites/standardStrap/wp-content/themes/Blog.standardStrap/README.md",
+		"/Users/Frederik/Sites/standardStrap/wp-content/themes/Blog.standardStrap/style.css",
+		"/Users/Frederik/Sites/standardStrap/wp-content/themes/Blog.standardStrap/single.php",
+		"/Users/Frederik/Sites/standardStrap/wp-content/themes/Blog.standardStrap/page.php",
+		"/Users/Frederik/Sites/standardStrap/wp-content/themes/Blog.standardStrap/loop.php",
+		"/Users/Frederik/Sites/standardStrap/wp-content/themes/Blog.standardStrap/sidebar-pages.php",
+		"/Users/Frederik/Sites/standardStrap/wp-content/themes/Blog.standardStrap/sidebar.php",
+		"/Users/Frederik/Sites/standardStrap/wp-content/themes/Blog.standardStrap/loop-standard.php",
+		"/Users/Frederik/Sites/standardStrap/wp-content/themes/Blog.standardStrap/loop-image.php",
+		"/Users/Frederik/Sites/standardStrap/wp-content/themes/Blog.standardStrap/functions/Redirect-Manager/inc/wp-cli.php",
+		"/Users/Frederik/Sites/standardStrap/wp-content/themes/Blog.standardStrap/functions/Redirect-Manager/redirect-manager.php",
+		"/Users/Frederik/Sites/standardStrap/wp-content/themes/Blog.standardStrap/header.php",
+		"/Users/Frederik/Sites/standardStrap/wp-content/themes/Blog.standardStrap/archive.php",
+		"/Users/Frederik/Sites/standardStrap/wp-content/themes/Blog.standardStrap/author.php",
+		"/Users/Frederik/Sites/standardStrap/wp-content/themes/Blog.standardStrap/search.php",
+		"/Users/Frederik/Sites/standardStrap/wp-content/themes/Blog.standardStrap/searchform.php",
+		"/Users/Frederik/Sites/standardStrap/wp-content/themes/Blog.standardStrap/404.php",
+		"/Users/Frederik/Sites/standardStrap/wp-content/themes/Blog.standardStrap/library/css/font-awesome.min.css",
+		"/Users/Frederik/Sites/standardStrap/wp-content/themes/Blog.standardStrap/library/js/jquery.scrollToTop.js",
+		"/Users/Frederik/Sites/standardStrap/wp-content/themes/Blog.standardStrap/library/js/BackToTop.jquery.js",
+		"/Users/Frederik/Sites/standardStrap/wp-content/themes/Blog.standardStrap/functions/bootstrap-3-shortcodes/bootstrap-shortcodes.php",
+		"/Users/Frederik/Sites/standardStrap/wp-content/themes/Blog.standardStrap/functions/bootstrap-3-shortcodes/includes/bootstrap-shortcodes-help.php",
+		"/Volumes/Source-1/Sites/dev.frederik.se/wp-content/themes/Frederik/functions.php",
 		"/Users/Frederik/Library/Application Support/Sublime Text 2/Packages/SideBarEnhancements/messages/11.13.2012.1305.0.txt",
 		"/Volumes/Source-1/Sites/dev.frederik.se/wp-content/themes/Frederik/page.php",
 		"/Users/Frederik/Library/Application Support/Sublime Text 2/Packages/CSScomb/Default.sublime-keymap",
@@ -112,6 +214,17 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"post for",
+			"						\n",
+			"offcanvas-diplay-none",
+			"safe",
+			"Safe ",
+			"301",
+			"Saf",
+			"icon",
+			"foot",
+			"footer",
+			"help",
 			"tidy",
 			"cssty"
 		],
@@ -131,8 +244,688 @@
 	"groups":
 	[
 		{
+			"selected": 5,
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "content-image.php",
+					"settings":
+					{
+						"buffer_size": 1382,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								284,
+								284
+							]
+						],
+						"settings":
+						{
+							"codeintel": true,
+							"codeintel_config":
+							{
+								"JavaScript":
+								{
+									"codeintel_max_recursive_dir_depth": 2.0,
+									"codeintel_scan_files_in_project": false,
+									"javascriptExtraPaths":
+									[
+									]
+								},
+								"PHP":
+								{
+									"codeintel_max_recursive_dir_depth": 5.0,
+									"codeintel_scan_files_in_project": false,
+									"phpExtraPaths":
+									[
+									]
+								},
+								"Python":
+								{
+									"env":
+									{
+									}
+								}
+							},
+							"codeintel_enabled_languages":
+							[
+								"JavaScript",
+								"Mason",
+								"XBL",
+								"XUL",
+								"RHTML",
+								"SCSS",
+								"Python",
+								"HTML",
+								"Ruby",
+								"Python3",
+								"XML",
+								"Sass",
+								"XSLT",
+								"Django",
+								"HTML5",
+								"Perl",
+								"CSS",
+								"Twig",
+								"Less",
+								"Smarty",
+								"Node.js",
+								"Tcl",
+								"TemplateToolkit",
+								"PHP"
+							],
+							"codeintel_live": true,
+							"codeintel_live_enabled_languages":
+							[
+								"JavaScript",
+								"Mason",
+								"XBL",
+								"XUL",
+								"RHTML",
+								"SCSS",
+								"Python",
+								"HTML",
+								"Ruby",
+								"Python3",
+								"XML",
+								"Sass",
+								"XSLT",
+								"Django",
+								"HTML5",
+								"Perl",
+								"CSS",
+								"Twig",
+								"Less",
+								"Smarty",
+								"Node.js",
+								"Tcl",
+								"TemplateToolkit",
+								"PHP"
+							],
+							"codeintel_max_recursive_dir_depth": 10.0,
+							"codeintel_scan_exclude_dir":
+							{
+								"JavaScript":
+								[
+									"/build/",
+									"/min/"
+								]
+							},
+							"codeintel_scan_files_in_project": true,
+							"codeintel_selected_catalogs":
+							[
+								"PyWin32",
+								"jQuery",
+								"Rails"
+							],
+							"codeintel_snippets": true,
+							"codeintel_syntax_map":
+							{
+								"Python Django": "Python"
+							},
+							"codeintel_tooltips": "popup",
+							"sublime_auto_complete": true,
+							"syntax": "Packages/HTML/HTML.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "content-status.php",
+					"settings":
+					{
+						"buffer_size": 1400,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								166,
+								177
+							]
+						],
+						"settings":
+						{
+							"codeintel": true,
+							"codeintel_config":
+							{
+								"JavaScript":
+								{
+									"codeintel_max_recursive_dir_depth": 2.0,
+									"codeintel_scan_files_in_project": false,
+									"javascriptExtraPaths":
+									[
+									]
+								},
+								"PHP":
+								{
+									"codeintel_max_recursive_dir_depth": 5.0,
+									"codeintel_scan_files_in_project": false,
+									"phpExtraPaths":
+									[
+									]
+								},
+								"Python":
+								{
+									"env":
+									{
+									}
+								}
+							},
+							"codeintel_enabled_languages":
+							[
+								"JavaScript",
+								"Mason",
+								"XBL",
+								"XUL",
+								"RHTML",
+								"SCSS",
+								"Python",
+								"HTML",
+								"Ruby",
+								"Python3",
+								"XML",
+								"Sass",
+								"XSLT",
+								"Django",
+								"HTML5",
+								"Perl",
+								"CSS",
+								"Twig",
+								"Less",
+								"Smarty",
+								"Node.js",
+								"Tcl",
+								"TemplateToolkit",
+								"PHP"
+							],
+							"codeintel_live": true,
+							"codeintel_live_enabled_languages":
+							[
+								"JavaScript",
+								"Mason",
+								"XBL",
+								"XUL",
+								"RHTML",
+								"SCSS",
+								"Python",
+								"HTML",
+								"Ruby",
+								"Python3",
+								"XML",
+								"Sass",
+								"XSLT",
+								"Django",
+								"HTML5",
+								"Perl",
+								"CSS",
+								"Twig",
+								"Less",
+								"Smarty",
+								"Node.js",
+								"Tcl",
+								"TemplateToolkit",
+								"PHP"
+							],
+							"codeintel_max_recursive_dir_depth": 10.0,
+							"codeintel_scan_exclude_dir":
+							{
+								"JavaScript":
+								[
+									"/build/",
+									"/min/"
+								]
+							},
+							"codeintel_scan_files_in_project": true,
+							"codeintel_selected_catalogs":
+							[
+								"PyWin32",
+								"jQuery",
+								"Rails"
+							],
+							"codeintel_snippets": true,
+							"codeintel_syntax_map":
+							{
+								"Python Django": "Python"
+							},
+							"codeintel_tooltips": "popup",
+							"sublime_auto_complete": true,
+							"syntax": "Packages/PHP/PHP.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "content.php",
+					"settings":
+					{
+						"buffer_size": 1970,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1726,
+								1908
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "functions.php",
+					"settings":
+					{
+						"buffer_size": 8274,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3755,
+								3755
+							]
+						],
+						"settings":
+						{
+							"codeintel": true,
+							"codeintel_config":
+							{
+								"JavaScript":
+								{
+									"codeintel_max_recursive_dir_depth": 2.0,
+									"codeintel_scan_files_in_project": false,
+									"javascriptExtraPaths":
+									[
+									]
+								},
+								"PHP":
+								{
+									"codeintel_max_recursive_dir_depth": 5.0,
+									"codeintel_scan_files_in_project": false,
+									"phpExtraPaths":
+									[
+									]
+								},
+								"Python":
+								{
+									"env":
+									{
+									}
+								}
+							},
+							"codeintel_enabled_languages":
+							[
+								"JavaScript",
+								"Mason",
+								"XBL",
+								"XUL",
+								"RHTML",
+								"SCSS",
+								"Python",
+								"HTML",
+								"Ruby",
+								"Python3",
+								"XML",
+								"Sass",
+								"XSLT",
+								"Django",
+								"HTML5",
+								"Perl",
+								"CSS",
+								"Twig",
+								"Less",
+								"Smarty",
+								"Node.js",
+								"Tcl",
+								"TemplateToolkit",
+								"PHP"
+							],
+							"codeintel_live": true,
+							"codeintel_live_enabled_languages":
+							[
+								"JavaScript",
+								"Mason",
+								"XBL",
+								"XUL",
+								"RHTML",
+								"SCSS",
+								"Python",
+								"HTML",
+								"Ruby",
+								"Python3",
+								"XML",
+								"Sass",
+								"XSLT",
+								"Django",
+								"HTML5",
+								"Perl",
+								"CSS",
+								"Twig",
+								"Less",
+								"Smarty",
+								"Node.js",
+								"Tcl",
+								"TemplateToolkit",
+								"PHP"
+							],
+							"codeintel_max_recursive_dir_depth": 10.0,
+							"codeintel_scan_exclude_dir":
+							{
+								"JavaScript":
+								[
+									"/build/",
+									"/min/"
+								]
+							},
+							"codeintel_scan_files_in_project": true,
+							"codeintel_selected_catalogs":
+							[
+								"PyWin32",
+								"jQuery",
+								"Rails"
+							],
+							"codeintel_snippets": true,
+							"codeintel_syntax_map":
+							{
+								"Python Django": "Python"
+							},
+							"codeintel_tooltips": "popup",
+							"sublime_auto_complete": true,
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1321.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "style.css",
+					"settings":
+					{
+						"buffer_size": 20910,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								16779,
+								16779
+							]
+						],
+						"settings":
+						{
+							"codeintel": true,
+							"codeintel_config":
+							{
+								"JavaScript":
+								{
+									"codeintel_max_recursive_dir_depth": 2.0,
+									"codeintel_scan_files_in_project": false,
+									"javascriptExtraPaths":
+									[
+									]
+								},
+								"PHP":
+								{
+									"codeintel_max_recursive_dir_depth": 5.0,
+									"codeintel_scan_files_in_project": false,
+									"phpExtraPaths":
+									[
+									]
+								},
+								"Python":
+								{
+									"env":
+									{
+									}
+								}
+							},
+							"codeintel_enabled_languages":
+							[
+								"JavaScript",
+								"Mason",
+								"XBL",
+								"XUL",
+								"RHTML",
+								"SCSS",
+								"Python",
+								"HTML",
+								"Ruby",
+								"Python3",
+								"XML",
+								"Sass",
+								"XSLT",
+								"Django",
+								"HTML5",
+								"Perl",
+								"CSS",
+								"Twig",
+								"Less",
+								"Smarty",
+								"Node.js",
+								"Tcl",
+								"TemplateToolkit",
+								"PHP"
+							],
+							"codeintel_live": true,
+							"codeintel_live_enabled_languages":
+							[
+								"JavaScript",
+								"Mason",
+								"XBL",
+								"XUL",
+								"RHTML",
+								"SCSS",
+								"Python",
+								"HTML",
+								"Ruby",
+								"Python3",
+								"XML",
+								"Sass",
+								"XSLT",
+								"Django",
+								"HTML5",
+								"Perl",
+								"CSS",
+								"Twig",
+								"Less",
+								"Smarty",
+								"Node.js",
+								"Tcl",
+								"TemplateToolkit",
+								"PHP"
+							],
+							"codeintel_max_recursive_dir_depth": 10.0,
+							"codeintel_scan_exclude_dir":
+							{
+								"JavaScript":
+								[
+									"/build/",
+									"/min/"
+								]
+							},
+							"codeintel_scan_files_in_project": true,
+							"codeintel_selected_catalogs":
+							[
+								"PyWin32",
+								"jQuery",
+								"Rails"
+							],
+							"codeintel_snippets": true,
+							"codeintel_syntax_map":
+							{
+								"Python Django": "Python"
+							},
+							"codeintel_tooltips": "popup",
+							"sublime_auto_complete": true,
+							"syntax": "Packages/CSS/CSS.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 12698.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "README.md",
+					"settings":
+					{
+						"buffer_size": 1298,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								182,
+								182
+							]
+						],
+						"settings":
+						{
+							"codeintel": true,
+							"codeintel_config":
+							{
+								"JavaScript":
+								{
+									"codeintel_max_recursive_dir_depth": 2.0,
+									"codeintel_scan_files_in_project": false,
+									"javascriptExtraPaths":
+									[
+									]
+								},
+								"PHP":
+								{
+									"codeintel_max_recursive_dir_depth": 5.0,
+									"codeintel_scan_files_in_project": false,
+									"phpExtraPaths":
+									[
+									]
+								},
+								"Python":
+								{
+									"env":
+									{
+									}
+								}
+							},
+							"codeintel_enabled_languages":
+							[
+								"JavaScript",
+								"Mason",
+								"XBL",
+								"XUL",
+								"RHTML",
+								"SCSS",
+								"Python",
+								"HTML",
+								"Ruby",
+								"Python3",
+								"XML",
+								"Sass",
+								"XSLT",
+								"Django",
+								"HTML5",
+								"Perl",
+								"CSS",
+								"Twig",
+								"Less",
+								"Smarty",
+								"Node.js",
+								"Tcl",
+								"TemplateToolkit",
+								"PHP"
+							],
+							"codeintel_live": true,
+							"codeintel_live_enabled_languages":
+							[
+								"JavaScript",
+								"Mason",
+								"XBL",
+								"XUL",
+								"RHTML",
+								"SCSS",
+								"Python",
+								"HTML",
+								"Ruby",
+								"Python3",
+								"XML",
+								"Sass",
+								"XSLT",
+								"Django",
+								"HTML5",
+								"Perl",
+								"CSS",
+								"Twig",
+								"Less",
+								"Smarty",
+								"Node.js",
+								"Tcl",
+								"TemplateToolkit",
+								"PHP"
+							],
+							"codeintel_max_recursive_dir_depth": 10.0,
+							"codeintel_scan_exclude_dir":
+							{
+								"JavaScript":
+								[
+									"/build/",
+									"/min/"
+								]
+							},
+							"codeintel_scan_files_in_project": true,
+							"codeintel_selected_catalogs":
+							[
+								"PyWin32",
+								"jQuery",
+								"Rails"
+							],
+							"codeintel_snippets": true,
+							"codeintel_syntax_map":
+							{
+								"Python Django": "Python"
+							},
+							"codeintel_tooltips": "popup",
+							"sublime_auto_complete": true,
+							"syntax": "Packages/Markdown/Markdown.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
 			]
 		}
 	],
@@ -142,7 +935,7 @@
 	},
 	"input":
 	{
-		"height": 0.0
+		"height": 31.0
 	},
 	"layout":
 	{
@@ -167,6 +960,10 @@
 		]
 	},
 	"menu_visible": true,
+	"output.git":
+	{
+		"height": 100.0
+	},
 	"replace":
 	{
 		"height": 0.0

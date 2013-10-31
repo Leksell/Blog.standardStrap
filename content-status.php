@@ -9,6 +9,8 @@
 <div class="blog-main" >
 <div class="show-avatar"><?php echo get_avatar( get_the_author_meta('email') , 90 ); ?></div>
        <a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>" >
+       	<?php if ( function_exists( 'sharing_display' ) ) remove_filter( 'the_content', 'sharing_display', 19 ); ?>
+<?php if ( function_exists( 'sharing_display' ) ) remove_filter( 'the_excerpt', 'sharing_display', 19 ); ?>
              <?php the_content(); ?>
 		</a>
 

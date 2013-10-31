@@ -377,6 +377,9 @@ img {
 	color:#fff;
 }
 
+.tagcloud a, .tagcloud a:visited {background-color:#A9D300; border-radius:2px; padding-left:4px; padding-right:4px; font-size:14px!important; line-height:24px;color:#fff; word-wrap: norma!important;}
+.tagcloud a:hover {color:rgb(35, 35, 35);}
+
 /* =Blog and Single
 -------------------------------------------------------------- */
 .single-main,.blog-main, .page-main {
@@ -552,9 +555,9 @@ font-size: 12px;	font-family:'Raleway', sans-serif!important;}
 
 /* =Post formats
 -------------------------------------------------------------- */
-.format-link .entry-title {position:relative;bottom:40px; left:50px;}
-.formatlink { max-height:50px;}
-h1.quote {padding-left:30px;}
+.format-link .entry-title {padding-left: 30px; margin-bottom: 30px;}
+.fa.fa-link.fa-3x.format-link  {font-weight:bold;}
+h1.quote {padding-left:30px; }
 .show-avatar .avatar {float:left; margin-right:15px; margin-bottom:15px; border-radius:50px;}
 
 
@@ -883,8 +886,7 @@ hr.space {
 
 /* =Post formats
 -------------------------------------------------------------- */
-.format-link .entry-title {position:relative;bottom:25px!important; left:40px!important;}
-.formatlink { max-height:35px!important;}
+.format-link .entry-title {padding-left: 20px; margin-bottom: 10px;}
 .format-link {font-size:30px;}
 h1.quote {padding-left:20px!important;}.
 .quote-icons {font-size:30px!important;}

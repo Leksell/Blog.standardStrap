@@ -1,72 +1,23 @@
-<?php get_header(); ?>
+<?php
+/**
+ * The template for displaying all single posts
+ *
+ * @package WordPress
+ * @subpackage Twenty_Thirteen
+ * @since Twenty Thirteen 1.0
+ */
 
-			<div class="row">
-				<div id="main" class="col-md-9 clearfix single-mai" role="main">
+get_header(); ?>
 
-					<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-					<div class="single-main">
-					<article id="post-<?php the_ID(); ?>" <?php post_class('clearfix'); ?> role="article">
-						
-						<header>
-						<?php if( bi_get_data('enable_disable_featured_image','1') == '1') {?>
-								<?php the_post_thumbnail('blog-thumb'); ?>
-						<?php } ?>
-							<div class="page-header"><h1 class="single-title" itemprop="headline"><?php the_title(); ?></h1></div>
-							
-				<hr class="meta-hr">
-				  	<section class="post-meta meta-options">
-				                <i class="fa fa-clock-o"></i>
-				                <?php if( strlen( trim( get_the_title() ) ) == 0 ) { ?>
-									<a href="<?php the_permalink(); ?>" rel="bookmark" title="<?php printf( esc_attr__( '%s', 'standard' ), the_title_attribute( 'echo=0' ) ); ?>"><span class="the-time updated"> 
-									<?php the_time( get_option( 'date_format' ) ); ?></span></a>
-								<?php } else { ?>
-									<span class="post-last-updated">
-									<?php echo (''), human_time_diff(get_the_modified_date('U'), current_time('timestamp'));?> ago&nbsp;&nbsp; <i class="fa fa-user"></i> <?php the_author_posts_link(); ?>
-									</span>
-								<?php if ( comments_open() ) : ?>
-                        <span class="comments-link">
-                        <span class="mdash">&nbsp;&nbsp;</span>
-                    <?php comments_popup_link(__('<i class="fa fa-comments"></i> 0', 'responsive'), __('<i class="fa fa-comments"></i> 1', 'responsive'), __('<i class="fa fa-comments"></i> %', 'responsive')); ?>
-                        </span>
-                        
-                    <?php endif; ?>
-								<?php } //end if/else ?>                    
-				     </section>       
-							<hr class="meta-hr">
+		<div class="row row-offcanvas row-offcanvas-right">
+		  <div class="col-md-9">
 
-						
-						</header> <!-- end article header -->
-					
-						<section class="post_content clearfix" itemprop="articleBody">
-						
-<?php if ( function_exists( 'sharing_display' ) ) remove_filter( 'the_content', 'sharing_display', 19 ); ?>
-<?php if ( function_exists( 'sharing_display' ) ) remove_filter( 'the_excerpt', 'sharing_display', 19 ); ?>
+			<?php /* The loop */ ?>
+			<?php while ( have_posts() ) : the_post(); ?>
 
-							<?php the_content(); ?>
-							
-							<?php wp_link_pages(); ?>
-					
-						</section> <!-- end article section -->
-						
-						<footer>
-			
-							
-							<?php 
-							// only show edit button if user has permission to edit posts
-							if( $user_level > 0 ) { 
-							?>
-							<a href="<?php echo get_edit_post_link(); ?>" class="btn btn-success edit-post"><i class="fa fa-pencil"></i> <?php _e("Edit post","standardStrap"); ?></a>
-							<?php } ?>
-							
-						</footer> <!-- end article footer -->
-					 
-					 <hr class="meta-hr meta-hr-margin">
-								<section class="post-meta-bottom meta-options">
-									<i class="fa fa-tags"></i> <?php the_tags('<span class="tags-title">' . __("","standardStrap") . '</span> ', ', ',' '); ?>
-								</section>
-					 
-					</article> <!-- end article -->
-					</div> <!-- end #main -->
+				<?php get_template_part( 'content', get_post_format() ); ?>
+				
+
 					
 						<!--- Share Buttons here -->
 						<?php if ( function_exists( 'sharing_display' ) ) { echo '<div class="page-main">' . sharing_display() . '</div>' ; } ?>
@@ -119,27 +70,14 @@
 					
 					<?php comments_template('',true); ?>
 					</div> <!-- end single-main -->
-					<?php endwhile; ?>			
 					
-					<?php else : ?>
-					
-					<article id="post-not-found">
-					    <header>
-					    	<h1><?php _e("Not Found", "standardStrap"); ?></h1>
-					    </header>
-					    <section class="post_content">
-					    	<p><?php _e("Sorry, but the requested resource was not found on this site.", "standardStrap"); ?></p>
-					    </section>
-					    <footer>
-					    </footer>
-					</article>
-					
-					<?php endif; ?>
 			
-				</div> <!-- end #main -->
-    
-				<?php get_sidebar(); // sidebar ?>
-    </div>
-			</div> <!-- end #content -->
 
+			<?php endwhile; ?>
+
+	</div><!-- #primary -->
+
+<?php get_sidebar(); ?>
 <?php get_footer(); ?>
+
+
