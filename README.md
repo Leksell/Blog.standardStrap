@@ -55,6 +55,8 @@ Good SEO and Tools
 
 Continues scroll (Use JetPack)
 
+Site Speed optimization
+
 
 
 
