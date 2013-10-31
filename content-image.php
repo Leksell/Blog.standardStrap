@@ -6,7 +6,7 @@
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-<div class="blog-main" >
+<div class="blog-main contnet-image-post" >
 
        <a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>" >
        	<?php if ( function_exists( 'sharing_display' ) ) remove_filter( 'the_content', 'sharing_display', 19 ); ?>
@@ -14,7 +14,7 @@
              <?php the_content(); ?>
 		</a>
 
-    <h1><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h1>
+    <h1 class="image-post-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h1>
     <hr class="meta-hr">
 	  	<section class="post-meta meta-options">
                 <i class="fa fa-clock-o"></i>

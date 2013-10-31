@@ -12,6 +12,9 @@
 			<?php endif; ?>
 		<link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
 		<?php wp_enqueue_script("jquery"); ?>
+		<?php if( bi_get_data('tracking_header') ) : ?>
+        <?php echo bi_get_data('tracking_header'); ?>
+            <?php endif; ?>
 		<!-- wordpress head functions -->
 		<?php wp_head(); ?>
 		<!-- end of wordpress head -->

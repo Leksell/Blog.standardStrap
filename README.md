@@ -49,15 +49,13 @@ Off Canvas menu widget
 
 Total cleanup before version 1.0
 
-GitHub Integration
-
 Good SEO and Tools
-
-Continues scroll (Use JetPack)
 
 Site Speed optimization
 
+Maintenance mode
 
+Images Lightbox
 
 
 

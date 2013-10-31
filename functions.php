@@ -29,6 +29,8 @@ function load_fonts() {
 
 add_action('wp_print_styles', 'load_fonts');
 */
+
+
     
 //Custom Background Support
 add_theme_support( 'custom-background');

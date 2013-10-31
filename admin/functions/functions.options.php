@@ -139,13 +139,13 @@ if (!function_exists('of_options'))
 		$of_options[] = array( "name"	=> __( 'Header', 'responsive' ),
 			"type"	=> "heading");
 
-		$of_options[] = array( "name"	=> __( 'Fixed Navbar', 'responsive' ),
-			"desc"	=> __( 'Select to enable/disable a fixed navbar.', 'responsive' ),
-			"id"	=> "disable_fixed_navbar",
-			"std"	=> '1',
-			"on"	=> __( 'Enable', 'responsive' ),
-			"off"	=> __( 'Disable', 'responsive' ),
-			"type"	=> "switch");
+		// $of_options[] = array( "name"	=> __( 'Fixed Navbar', 'responsive' ),
+		// 	"desc"	=> __( 'Select to enable/disable a fixed navbar.', 'responsive' ),
+		// 	"id"	=> "disable_fixed_navbar",
+		// 	"std"	=> '1',
+		// 	"on"	=> __( 'Enable', 'responsive' ),
+		// 	"off"	=> __( 'Disable', 'responsive' ),
+		// 	"type"	=> "switch");
 
 		$of_options[] = array( "name"	=> __( 'Main Logo', 'responsive' ),
 			"desc"	=> __( 'Use this field to upload your custom logo for use in the theme header. (Recommended 40px H x 200px W)', 'responsive' ),
@@ -154,13 +154,13 @@ if (!function_exists('of_options'))
 			"type"	=> "media",
 			);
 
-		$of_options[] = array( "name"	=> __( 'Header Search Bar', 'responsive' ),
-			"desc"	=> __( 'Select to enable/disable the search bar in the header', 'responsive' ),
-			"id"	=> "enable_disable_search",
-			"std"	=> '0',
-			"on"	=> __( 'Enable', 'responsive' ),
-			"off"	=> __( 'Disable', 'responsive' ),
-			"type"	=> "switch");	
+		// $of_options[] = array( "name"	=> __( 'Header Search Bar', 'responsive' ),
+		// 	"desc"	=> __( 'Select to enable/disable the search bar in the header', 'responsive' ),
+		// 	"id"	=> "enable_disable_search",
+		// 	"std"	=> '0',
+		// 	"on"	=> __( 'Enable', 'responsive' ),
+		// 	"off"	=> __( 'Disable', 'responsive' ),
+		// 	"type"	=> "switch");	
 			
 //===============================================================================================================================
 //! 		
@@ -316,15 +316,15 @@ if (!function_exists('of_options'))
 //  			"type"	=> "color");
 //======================================================================================================
 
-//Search & Archive
-  		$of_options[] = array( "name"	=> __( 'Search-Archive', 'responsive' ),
-			"type"	=> "heading");
+// //Search & Archive
+//   		$of_options[] = array( "name"	=> __( 'Search-Archive', 'responsive' ),
+// 			"type"	=> "heading");
 			
-		$of_options[] = array( "name"	=> __( 'Search & Archive Showing results title', 'responsive' ),
-			"desc"	=> __( 'Select your desired font size in pixels.', 'responsive' ),
-			"id"	=> "we-found",
-			"std"	=> '4px',
-			"type"	=> "text");
+// 		$of_options[] = array( "name"	=> __( 'Search & Archive Showing results title', 'responsive' ),
+// 			"desc"	=> __( 'Select your desired font size in pixels.', 'responsive' ),
+// 			"id"	=> "we-found",
+// 			"std"	=> '4px',
+// 			"type"	=> "text");
 		
 //==========================================================================================================
 //! 
@@ -364,13 +364,13 @@ if (!function_exists('of_options'))
 			"type"	=> "heading");
 
 
-		$of_options[] = array( "name"	=> __( 'Display Meta & Tags', 'responsive' ),
-			"desc"	=> __( 'Select to enable/disable the post meta & tags.', 'responsive' ),
-			"id"	=> "enable_disable_meta_tags",
-			"std"	=> '1',
-			"on"	=> __( 'Enable', 'responsive' ),
-			"off"	=> __( 'Disable', 'responsive' ),
-			"type"	=> "switch");
+		// $of_options[] = array( "name"	=> __( 'Display Meta & Tags', 'responsive' ),
+		// 	"desc"	=> __( 'Select to enable/disable the post meta & tags.', 'responsive' ),
+		// 	"id"	=> "enable_disable_meta_tags",
+		// 	"std"	=> '1',
+		// 	"on"	=> __( 'Enable', 'responsive' ),
+		// 	"off"	=> __( 'Disable', 'responsive' ),
+		// 	"type"	=> "switch");
 			
 		$of_options[] = array( "name"	=> __( 'Display Featured Image', 'responsive' ),
 			"desc"	=> __( 'Select to enable/disable Featured Image on single page view.', 'responsive' ),
@@ -449,17 +449,17 @@ if (!function_exists('of_options'))
 		$of_options[] = array( "name"	=> __( 'Footer', 'responsive' ),
 			"type"	=> "heading");
 
-		$of_options[] = array( "name"	=> __( 'Footer Background Color', 'responsive' ),
-			"desc"	=> __( 'Select your preferred color.', 'responsive' ),
-			"id"	=> "footer_bg_color",
-			"std"	=> "#ededed",
-			"type"	=> "color");			
+		// $of_options[] = array( "name"	=> __( 'Footer Background Color', 'responsive' ),
+		// 	"desc"	=> __( 'Select your preferred color.', 'responsive' ),
+		// 	"id"	=> "footer_bg_color",
+		// 	"std"	=> "#ededed",
+		// 	"type"	=> "color");			
 			
-		$of_options[] = array( "name"	=> __( 'Footer Text Color', 'responsive' ),
-			"desc"	=> __( 'Select your preferred color.', 'responsive' ),
-			"id"	=> "footer_text_color",
-			"std"	=> "#333333",
-			"type"	=> "color");	
+		// $of_options[] = array( "name"	=> __( 'Footer Text Color', 'responsive' ),
+		// 	"desc"	=> __( 'Select your preferred color.', 'responsive' ),
+		// 	"id"	=> "footer_text_color",
+		// 	"std"	=> "#333333",
+		// 	"type"	=> "color");	
 			
 
 		$of_options[] = array( "name"	=> __( 'Custom Copyright', 'responsive' ),
@@ -468,11 +468,11 @@ if (!function_exists('of_options'))
 			"std"	=> "",
 			"type"	=> "textarea");
 
-		$of_options[] = array( "name"	=> __( 'Custom Powered By Text', 'responsive' ),
-			"desc"	=> __( 'Add your own custom text/html for powered by region.', 'responsive' ),
-			"id"	=> "custom_power",
-			"std"	=> "",
-			"type"	=> "textarea");
+		// $of_options[] = array( "name"	=> __( 'Custom Powered By Text', 'responsive' ),
+		// 	"desc"	=> __( 'Add your own custom text/html for powered by region.', 'responsive' ),
+		// 	"id"	=> "custom_power",
+		// 	"std"	=> "",
+		// 	"type"	=> "textarea");
 
 		$of_options[] = array( "name"	=> __( 'Tracking', 'responsive' ),
 			"type"	=> "heading");

@@ -28,7 +28,13 @@
 		</div> <!-- end #container -->
 			<div class="copyright clearfix">
 				<div class="container">
-				<div class="credits">&copy; Copyright <?php echo date("Y") ?> by Frederik Leksell</div>			
+
+ <?php if( bi_get_data('custom_copyright') ) : ?>
+       <div class="credits"> <?php echo bi_get_data('custom_copyright'); ?></div>
+      <?php else : ?>
+              <div class="credits">&copy; <?php _e('Copyright', 'responsive'); ?> <?php echo date('Y'); ?> <a href="<?php echo home_url(); ?>/" title="<?php bloginfo('name'); ?>" rel="home"><?php bloginfo('name'); ?></a></div>
+            <?php endif; ?>
+
 				</div><!-- /.container -->
 			</div><!-- /#sub-floor -->
 		
@@ -47,6 +53,9 @@
 					jQuery("#toTop").scrollToTop(800);
 				});
 		</script>
+		<?php if( bi_get_data('tracking_footer') ) : ?>
+        <?php echo bi_get_data('tracking_footer'); ?>
+            <?php endif; ?>
 	</body>
 
 </html>
