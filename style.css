@@ -561,6 +561,7 @@ h1.quote {padding-left:30px; }
 .show-avatar .avatar {float:left; margin-right:15px; margin-bottom:15px; border-radius:50px;}
 .contnet-image-post {padding-left:0px; padding-right:0px;}
 .image-post-title {padding-left: 15px;}
+.contnet-image-post .post-meta.meta-options{padding-left:15px;}
 
 /* =Archive, Meta, Search etc..
 -------------------------------------------------------------- */
@@ -894,6 +895,7 @@ h1.quote {padding-left:20px!important;}.
 .show-avatar .avatar {float:left; margin-right:10px; margin-bottom:10px; border-radius:50px; height:50px; width:50px;}
 .image-post-title {padding-left: 10px;}
 .contnet-image-post {padding-left:0px; padding-right:0px;}
+.contnet-image-post .post-meta.meta-options{padding-left:10px;}
 /*----Buttons---*/
 .btn-post {
     float: right;

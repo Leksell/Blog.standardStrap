@@ -116,6 +116,14 @@ if (!function_exists('of_options'))
 			"type"	=> "heading",
 			);
 
+		$of_options[] = array( "name"	=> __( 'Maintenance mode', 'responsive' ),
+			"desc"	=> __( 'Enable and disable maintenance mode.', 'responsive' ),
+			"id"	=> "maintenance-mode",
+			"std"	=> '0',
+			"on"	=> __( 'Enable', 'responsive' ),
+			"off"	=> __( 'Disable', 'responsive' ),
+			"type"	=> "switch");
+
 		$of_options[] = array( "name"	=> __( 'Login Logo', 'responsive' ),
 			"desc"	=> __( 'Upload a custom logo for your Wordpress login screen. (Recommended 300px x 80px)', 'responsive' ),
 			"id"	=> "custom_login_logo",

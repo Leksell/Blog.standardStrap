@@ -20,17 +20,19 @@ if ( ! function_exists('bi_get_data') ) {
 }
 require_once( get_template_directory() .'/admin/front-end/admin-opstions-css.php' );
 
-/*
-//Regsiter Google fonts for this theme
-function load_fonts() {
-        wp_register_style('googleFonts', 'http://fonts.googleapis.com/css?family=Open+Sans|Raleway', array(), '', 'all' );
-        wp_enqueue_style( 'googleFonts');
-    }
-
-add_action('wp_print_styles', 'load_fonts');
-*/
 
 
+            
+
+/*  // Add Lightbox   */
+// Enqueue Scripts/Styles for our Lightbox
+function twentytwelve_add_lightbox() {
+    wp_enqueue_script( 'fancybox', get_template_directory_uri() . '/functions/lightbox/js/jquery.fancybox.pack.js', array( 'jquery' ), false, true );
+    wp_enqueue_script( 'lightbox', get_template_directory_uri() . '/functions/lightbox/js/lightbox.js', array( 'fancybox' ), false, true );
+    wp_enqueue_style( 'lightbox-style', get_template_directory_uri() . '/functions/lightbox/css/jquery.fancybox.css' );
+}
+add_action( 'wp_enqueue_scripts', 'twentytwelve_add_lightbox' );
+ 
     
 //Custom Background Support
 add_theme_support( 'custom-background');
@@ -45,6 +47,19 @@ require_once('functions/Redirect-Manager/redirect-manager.php');
 // Bootstrap carousel !!! Har problem med featured image i Admin posts
 require_once('functions/bootstrap-carousel.php');
 */
+
+
+// Maintenance mode
+if( bi_get_data('maintenance-mode','1') == '1') :
+// if( bi_get_data('maintenance-mode') ) : 
+
+function maintenace_mode() {
+      if ( !current_user_can( 'edit_themes' ) || !is_user_logged_in() ) {wp_die('Hi, we do some maintenance for the moment, please check back in a while!');}
+}
+add_action('get_header', 'maintenace_mode'); 
+  
+endif; 
+  
 
 // Register Social Icons
 require_once('functions/social-icons.php');

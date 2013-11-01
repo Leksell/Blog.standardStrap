@@ -11,7 +11,7 @@
        <a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>" >
        	<?php if ( function_exists( 'sharing_display' ) ) remove_filter( 'the_content', 'sharing_display', 19 ); ?>
 <?php if ( function_exists( 'sharing_display' ) ) remove_filter( 'the_excerpt', 'sharing_display', 19 ); ?>
-             <?php the_content(); ?>
+            <span class="lightbx"> <?php the_content(); ?></span>
 		</a>
 
     <h1 class="image-post-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h1>
