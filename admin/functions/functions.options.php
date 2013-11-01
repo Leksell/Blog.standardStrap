@@ -408,51 +408,49 @@ if (!function_exists('of_options'))
 //====================================================================================
 //================================================================================================================
 //! 
-//  		//Solcial
-//  		$of_options[] = array( "name"	=> __( 'Social', 'responsive' ),
-//  			"type"	=> "heading");
-//  
-//  		$of_options[] = array( "name"	=> __( 'Social Icons In Footer', 'responsive' ),
-//  			"desc"	=> __( 'Select to enable/disable the social icons in the footer.', 'responsive' ),
-//  			"id"	=> "disable_social_footer",
-//  			"std"	=> '0',
-//  			"on"	=> __( 'Enable', 'responsive' ),
-//  			"off"	=> __( 'Disable', 'responsive' ),
-//  			"type"	=> "switch");
-//  
-//================================================================================================================
+ 	// 	//Solcial
+ 	// 	$of_options[] = array( "name"	=> __( 'Social', 'responsive' ),
+ 	// 		"type"	=> "heading");
+ 
+ 	// 	$of_options[] = array( "name"	=> __( 'Social Icons In Footer', 'responsive' ),
+ 	// 		"desc"	=> __( 'Select to enable/disable the social icons in the footer.', 'responsive' ),
+ 	// 		"id"	=> "disable_social_footer",
+ 	// 		"std"	=> '0',
+ 	// 		"on"	=> __( 'Enable', 'responsive' ),
+ 	// 		"off"	=> __( 'Disable', 'responsive' ),
+ 	// 		"type"	=> "switch");
 
-		$url =  ADMIN_DIR . 'assets/images/';					
-		$of_options[] = array( "name"	=> __( 'Social Style', 'responsive' ),
-			"desc"	=> __( 'Select your social icon style. Some icons don\'t have both styles. Refer to <a href="http://fortawesome.github.io/Font-Awesome/" target="_blank">Font Awesome</a>.', 'responsive' ),
-			"id"	=> "social_style",
-			"std"	=> "two",
-			"type"	=> "images",
-			"options"	=> array(
-				'one'	=> $url . 'facebook.jpg',
-				'two'	=> $url . 'facebook2.jpg' )
-			);
+		// $url =  ADMIN_DIR . 'assets/images/';					
+		// $of_options[] = array( "name"	=> __( 'Social Style', 'responsive' ),
+		// 	"desc"	=> __( 'Select your social icon style. Some icons don\'t have both styles. Refer to <a href="http://fortawesome.github.io/Font-Awesome/" target="_blank">Font Awesome</a>.', 'responsive' ),
+		// 	"id"	=> "social_style",
+		// 	"std"	=> "two",
+		// 	"type"	=> "images",
+		// 	"options"	=> array(
+		// 		'one'	=> $url . 'facebook.jpg',
+		// 		'two'	=> $url . 'facebook2.jpg' )
+		// 	);
 			
-		$of_options[] = array( "name"	=> __( 'Social Icon Color', 'responsive' ),
-			"desc"	=> __( 'Select your preferred color.', 'responsive' ),
-			"id"	=> "social_link",
-			"std"	=> "#456c81",
-			"type"	=> "color");
+		// $of_options[] = array( "name"	=> __( 'Social Icon Color', 'responsive' ),
+		// 	"desc"	=> __( 'Select your preferred color.', 'responsive' ),
+		// 	"id"	=> "social_link",
+		// 	"std"	=> "#456c81",
+		// 	"type"	=> "color");
 
-		$of_options[] = array( "name"	=> __( 'Social Icon Hover Color', 'responsive' ),
-			"desc"	=> __( 'Select your preferred color.', 'responsive' ),
-			"id"	=> "social_link_hover",
-			"std"	=> "#333333",
-			"type"	=> "color");
+		// $of_options[] = array( "name"	=> __( 'Social Icon Hover Color', 'responsive' ),
+		// 	"desc"	=> __( 'Select your preferred color.', 'responsive' ),
+		// 	"id"	=> "social_link_hover",
+		// 	"std"	=> "#333333",
+		// 	"type"	=> "color");
 
-		$social_links = bi_social_links();		
-		foreach( $social_links as $social_link ) {
-			$of_options[] = array( "name"	=> ucfirst($social_link),
-				'desc'	=> ' '. __( 'Enter your ', 'responsive' ) . $social_link . __( ' url', 'responsive' ) .' <br />'. __( 'Include http:// at the front of the url.', 'responsive' ),
-				'id'	=> $social_link,
-				'std'	=> '#',
-				'type'	=> 'text' );
-		}
+		// $social_links = bi_social_links();		
+		// foreach( $social_links as $social_link ) {
+		// 	$of_options[] = array( "name"	=> ucfirst($social_link),
+		// 		'desc'	=> ' '. __( 'Enter your ', 'responsive' ) . $social_link . __( ' url', 'responsive' ) .' <br />'. __( 'Include http:// at the front of the url.', 'responsive' ),
+		// 		'id'	=> $social_link,
+		// 		'std'	=> '#',
+		// 		'type'	=> 'text' );
+		// }
 		//Footer
 		$of_options[] = array( "name"	=> __( 'Footer', 'responsive' ),
 			"type"	=> "heading");

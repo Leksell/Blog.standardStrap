@@ -59,11 +59,9 @@ DONE - Images Lightbox
 
 DONE - Maintenance mode
 
-Social Icons
+Mostly Done- Total cleanup before version 1.0
 
-Total cleanup before version 1.0
-
-Good SEO and Tools
+Check SEO
 
 Site Speed optimization
 

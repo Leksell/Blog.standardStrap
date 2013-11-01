@@ -1,7 +1,13 @@
 <?php
 /**
- * The default template for displaying images
+ * The default template for displaying Quotes
  *
+ * Author: Frederik Leksell 
+ * Author URI: http://frederik.se
+ * Version: 0.8.0
+ * Copyright (C) 2013 Frederik leksell 
+ * License: GNU General Public License, version 3 (GPLv3)
+ * License URI: license.txt 
  */
 ?>
 

@@ -1,4 +1,11 @@
-
+<!-- 
+ * Author: Frederik Leksell
+ * Author URI: http://frederik.se
+ * Version: 0.8.0
+ * Copyright (C) 2013 Frederik leksell 
+ * License: GNU General Public License, version 3 (GPLv3)
+ * License URI: license.txt 
+  -->
      <div id="default-sidebar" class="sidebar col-md-3 offcanvas-diplay-none" role="complementary">
 			<div class="margin-sidebar">
 				<?php if ( is_active_sidebar( 'sidebar2' ) ) : ?>

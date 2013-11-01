@@ -1,4 +1,11 @@
-
+<!-- 
+ * Author: Frederik Leksell
+ * Author URI: http://frederik.se
+ * Version: 0.8.0
+ * Copyright (C) 2013 Frederik leksell 
+ * License: GNU General Public License, version 3 (GPLv3)
+ * License URI: license.txt 
+  -->
 	
 	<head>
 		<meta charset="<?php bloginfo('charset'); ?>" />
@@ -26,6 +33,7 @@
 <?php if ( is_page_template('page-landingpage.php') ) {} else { ?>
 
 	
+	
 	<div id="outer-wrap">
 <div id="inner-wrap">
 <header id="top" role="banner">
@@ -36,12 +44,7 @@
 	<!-- Brand and toggle get grouped for better mobile display -->
 	<div class="container">
 		<div class="navbar-header">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
+          
 			
             <?php if( bi_get_data('custom_logo') !== '' ) { ?>
             <div id="logo"><a href="<?php echo home_url(); ?>/" title="<?php bloginfo( 'name' ); ?>" rel="home">
@@ -53,11 +56,10 @@
             <?php } else { ?>
             <a class="navbar-brand" href="<?php bloginfo( 'url' ) ?>/" title="<?php bloginfo( 'name' ) ?>" rel="homepage"><?php bloginfo( 'name' ) ?></a>
             <?php } } ?>
-
 			
 		</div>
 		<a id="nav-open-btn" href="#nav"><i class="fa fa-reorder fa-lg"></i></a>
-	
+
 		<!-- Collect the nav links, forms, and other content for toggling -->
 		<div class="collapse navbar-collapse navbar-ex1-collapse">
 			<?php

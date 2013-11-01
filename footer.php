@@ -1,4 +1,12 @@
-			
+<!-- 
+ * Author: Frederik Leksell
+ * Author URI: http://frederik.se
+ * Version: 0.8.0
+ * Copyright (C) 2013 Frederik leksell 
+ * License: GNU General Public License, version 3 (GPLv3)
+ * License URI: license.txt 
+  -->
+
 			</div> <!-- end #container -->
 			<footer role="contentinfo">
 			
@@ -29,11 +37,11 @@
 			<div class="copyright clearfix">
 				<div class="container">
 
- <?php if( bi_get_data('custom_copyright') ) : ?>
-       <div class="credits"> <?php echo bi_get_data('custom_copyright'); ?></div>
-      <?php else : ?>
-              <div class="credits">&copy; <?php _e('Copyright', 'responsive'); ?> <?php echo date('Y'); ?> <a href="<?php echo home_url(); ?>/" title="<?php bloginfo('name'); ?>" rel="home"><?php bloginfo('name'); ?></a></div>
-            <?php endif; ?>
+				 <?php if( bi_get_data('custom_copyright') ) : ?>
+				       <div class="credits"> <?php echo bi_get_data('custom_copyright'); ?></div>
+				      <?php else : ?>
+				              <div class="credits">&copy; <?php _e('Copyright', 'responsive'); ?> <?php echo date('Y'); ?> <a href="<?php echo home_url(); ?>/" title="<?php bloginfo('name'); ?>" rel="home"><?php bloginfo('name'); ?></a></div>
+				            <?php endif; ?>
 
 				</div><!-- /.container -->
 			</div><!-- /#sub-floor -->
@@ -47,7 +55,7 @@
 </div>
 <!--/#outer-wrap-->
 
-			<?php wp_register_script( $handle, $src, $deps, $ver, $in_footer ); ?>
+		<?php wp_register_script( $handle, $src, $deps, $ver, $in_footer ); ?>
 		<script type="text/javascript">
 			jQuery(function() {
 					jQuery("#toTop").scrollToTop(800);
@@ -55,7 +63,7 @@
 		</script>
 		<?php if( bi_get_data('tracking_footer') ) : ?>
         <?php echo bi_get_data('tracking_footer'); ?>
-            <?php endif; ?>
+        <?php endif; ?>
 	</body>
 
 </html>

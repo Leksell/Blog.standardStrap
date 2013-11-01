@@ -2,6 +2,12 @@
 /**
  * The default template for displaying content
  *
+ * Author: Frederik Leksell 
+ * Author URI: http://frederik.se
+ * Version: 0.8.0
+ * Copyright (C) 2013 Frederik leksell 
+ * License: GNU General Public License, version 3 (GPLv3)
+ * License URI: license.txt 
  */
 ?>
 
@@ -16,7 +22,8 @@
 				<?php } else { ?>
 					<span class="post-last-updated">
 					<?php echo (''), human_time_diff(get_the_modified_date('U'), current_time('timestamp'));?> ago
-					</span>
+					</span>&nbsp;&nbsp;
+				<i class="fa fa-user"></i> <?php the_author_posts_link(); ?> 
 				 <span class="mdash">&nbsp;&nbsp;</span>
                     <?php comments_popup_link(__('<i class="fa fa-comments"></i> 0', 'responsive'), __('<i class="fa fa-comments"></i> 1', 'responsive'), __('<i class="fa fa-comments"></i> %', 'responsive')); ?>
                         </span>

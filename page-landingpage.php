@@ -1,17 +1,14 @@
+
 <?php
 /**
  * Landing Page Template
  *
-   Template Name:  Landing Page 
- *
- * @file           landing-page.php
- * @package        StandardStrap 
- * @author         Frederik Leksell 
- * @copyright      2013 Frederik Leksell
- * @license        license.txt
- * @version        Release: 1.0.0
- * @link           http://codex.wordpress.org/Theme_Development#Pages_.28page.php.29
- * @since          available since Release 1.0
+ * Author: Frederik Leksell 
+ * Author URI: http://frederik.se
+ * Version: 0.8.0
+ * Copyright (C) 2013 Frederik leksell 
+ * License: GNU General Public License, version 3 (GPLv3)
+ * License URI: license.txt 
  */
 ?>
 <?php get_header(); ?>

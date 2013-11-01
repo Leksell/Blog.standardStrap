@@ -1,10 +1,11 @@
 <?php
 /**
- * The template for displaying all single posts
- *
- * @package WordPress
- * @subpackage Twenty_Thirteen
- * @since Twenty Thirteen 1.0
+ * Author: Frederik Leksell 
+ * Author URI: http://frederik.se
+ * Version: 0.8.0
+ * Copyright (C) 2013 Frederik leksell 
+ * License: GNU General Public License, version 3 (GPLv3)
+ * License URI: license.txt 
  */
 
 get_header(); ?>
