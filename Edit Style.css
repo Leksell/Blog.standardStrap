@@ -405,7 +405,7 @@ margin-bottom:20px;
 
 .sidebar .widget {
 margin-bottom:15px;
-padding:1px 15px 10px;
+padding:10px 15px 10px;
 border-radius:2px;
 background-color:#fff;
 }
@@ -1082,7 +1082,7 @@ background-color:#444;
 }
 
 h4.mobile-menu {
-color:#fff;
+color:rgb(35, 35, 35);
 font-weight:200!important;
 font-size:20px;
 font-family:Raleway,sans-serif!important;
@@ -1098,9 +1098,9 @@ color:#A9D300;
 
 .mobile-navbar .mobile-widget {
 margin:5px;
-padding:1px 8px 5px;
+padding:5px 8px 5px;
 border-radius:2px;
-background-color:#666;
+background-color:#fff;
 }
 
 .mobile-navbar ul li {
