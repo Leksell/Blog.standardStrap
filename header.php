@@ -26,6 +26,10 @@ endif; ?>" />
 			<?php if( bi_get_data('custom_favicon') !== '' ) : ?>
 				<link rel="icon" type="image/png" href="<?php echo bi_get_data('custom_favicon'); ?>" />
 			<?php endif; ?>
+			<?php if( bi_get_data('terminal_icon') !== '' ) : ?>
+				<link rel="apple-touch-icon-precomposed" href="<?php echo bi_get_data('terminal_icon'); ?>">
+				<link rel="shortcut icon" href="<?php echo bi_get_data('terminal_icon'); ?>">
+			<?php endif; ?>
 		<link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
 		<?php wp_enqueue_script("jquery"); ?>
 		<?php if( bi_get_data('tracking_header') ) : ?>

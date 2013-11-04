@@ -61,6 +61,10 @@ DONE - Maintenance mode
 
 DONE - Meta Data description filed in post and Page edit mode for better SEO.
 
+DONE - Mobile device desktop icon
+
+DONE - Google Plus Authorship integration in user profiles
+
 Mostly Done- Total cleanup before version 1.0
 
 Check SEO* Working on it...

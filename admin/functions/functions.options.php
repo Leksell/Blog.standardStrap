@@ -142,6 +142,12 @@ if (!function_exists('of_options'))
 			"std"	=> "",
 			"type"	=> "media");
 
+		$of_options[] = array( "name"	=> __( 'Mobile terminal desktop icon', 'responsive' ),
+			"desc"	=> __( 'Upload or past the URL for your iPhone (terminal) desktop icon. (144x144px)', 'responsive' ),
+			"id"	=> "terminal_icon",
+			"std"	=> "",
+			"type"	=> "media");
+
 				
 // Header & Top menu
 		$of_options[] = array( "name"	=> __( 'Header', 'responsive' ),
