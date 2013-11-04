@@ -38,7 +38,7 @@ require_once('functions/login-logo.php');
 require_once('functions/Redirect-Manager/redirect-manager.php');
 
 // Google Plus Authorhip
-require_once('functions/google-plus-authorhip.php');
+require_once('functions/google-plus-authorship.php');
 
 /*
 // Bootstrap carousel !!! Har problem med featured image i Admin posts
