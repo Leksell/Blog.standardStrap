@@ -141,6 +141,28 @@ register_nav_menus( array(
 	'top_navigation' => 'Responsive Top Navigation'
 ) );
 
+
+
+/************** Meta Description ******************/
+// 'Custom Meta Description' field below post/page editor
+add_action('admin_menu', 'custom_meta_desc');
+add_action('save_post', 'save_custom_meta_desc');
+function custom_meta_desc() {
+add_meta_box('custom_meta_desc', 'Add meta description <small>(if left empty, the first 200 characters will be used. Use Max 160 characters for best SEO.)</small>', 'custom_meta_desc_input_function', 'post', 'normal', 'high');
+add_meta_box('custom_meta_desc', 'Add meta description <small>(if left empty, the first 200 characters will be used. Use Max 160 characters for best SEO.)</small>', 'custom_meta_desc_input_function', 'page', 'normal', 'high');
+}
+function custom_meta_desc_input_function() {
+global $post;
+echo '<input type="hidden" name="custom_meta_desc_input_hidden" id="custom_meta_desc_input_hidden" value="'.wp_create_nonce('custom-meta-desc-nonce').'" />';
+echo '<input type="text" name="custom_meta_desc_input" id="custom_meta_desc_input" style="width:100%;" value="'.get_post_meta($post->ID,'_custom_meta_desc',true).'" />';
+}
+function save_custom_meta_desc($post_id) {
+if (!wp_verify_nonce($_POST['custom_meta_desc_input_hidden'], 'custom-meta-desc-nonce')) return $post_id;
+if (defined('DOING_AUTOSAVE') && DOING_AUTOSAVE) return $post_id;
+$customMetaDesc = $_POST['custom_meta_desc_input'];
+update_post_meta($post_id, '_custom_meta_desc', $customMetaDesc);
+}
+
 /************* ACTIVE SIDEBARS ********************/
 if ( function_exists('register_sidebar') )
 	// Sidebars & Widgetizes Areas

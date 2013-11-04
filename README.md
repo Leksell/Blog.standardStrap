@@ -59,9 +59,11 @@ DONE - Images Lightbox
 
 DONE - Maintenance mode
 
+DONE - Meta Data description filed in post and Page edit mode for better SEO.
+
 Mostly Done- Total cleanup before version 1.0
 
-Check SEO
+Check SEO* Working on it...
 
 Site Speed optimization
 

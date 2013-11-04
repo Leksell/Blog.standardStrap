@@ -14,6 +14,15 @@
 		
 		
 		<title><?php wp_title('&#124;', true, 'right'); ?><?php bloginfo('name'); ?></title>
+		<meta name="description" content="<?php
+if( is_single() || is_page() ) :
+$text = get_post_meta($post->ID,'_custom_meta_desc',true);
+if(!$text) $text = ($post->post_excerpt) ? $post->post_excerpt : substr($post->post_content, 0, 200).'...';
+echo esc_attr(strip_tags(apply_filters('get_the_excerpt',$text)));
+else :
+/* optional area to program meta descriptions for index and archive pages, etc */
+endif; ?>" />
+
 			<?php if( bi_get_data('custom_favicon') !== '' ) : ?>
 				<link rel="icon" type="image/png" href="<?php echo bi_get_data('custom_favicon'); ?>" />
 			<?php endif; ?>
