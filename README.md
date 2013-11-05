@@ -69,7 +69,11 @@ Mostly Done- Total cleanup before version 1.0
 
 Check SEO* Working on it...
 
-Site Speed optimization
+Site Speed optimization* Working on it...
+
+Social Follow me buttons/icons
+
+Gooogle XML Sitemap integration
 
 
 
