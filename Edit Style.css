@@ -398,7 +398,7 @@ width:auto;
 .single-main .wp-post-image {
 padding-bottom:5px;
 }
-
+.ss-twitter {text-align:center!important;} .twitter-count {font-size:28px; font-weight:200; margin-left:5px; color:#A9D300; font-family:Raleway,sans-serif!important; position:relative; bottom:3px;}
 .widget {
 margin-bottom:20px;
 }

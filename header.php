@@ -69,7 +69,7 @@ endif; ?>" />
             <?php } else { ?>
             <a class="navbar-brand" href="<?php bloginfo( 'url' ) ?>/" title="<?php bloginfo( 'name' ) ?>" rel="homepage"><?php bloginfo( 'name' ) ?></a>
             <?php } } ?>
-			
+
 		</div>
 		<a id="nav-open-btn" href="#nav"><i class="fa fa-reorder fa-lg"></i></a>
 

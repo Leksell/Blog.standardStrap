@@ -415,16 +415,22 @@ if (!function_exists('of_options'))
 //================================================================================================================
 //! 
  	// 	//Solcial
- 	// 	$of_options[] = array( "name"	=> __( 'Social', 'responsive' ),
- 	// 		"type"	=> "heading");
+ 		// $of_options[] = array( "name"	=> __( 'Social Widget', 'responsive' ),
+ 		// 	"type"	=> "heading");
  
- 	// 	$of_options[] = array( "name"	=> __( 'Social Icons In Footer', 'responsive' ),
- 	// 		"desc"	=> __( 'Select to enable/disable the social icons in the footer.', 'responsive' ),
- 	// 		"id"	=> "disable_social_footer",
- 	// 		"std"	=> '0',
- 	// 		"on"	=> __( 'Enable', 'responsive' ),
- 	// 		"off"	=> __( 'Disable', 'responsive' ),
- 	// 		"type"	=> "switch");
+ 		// $of_options[] = array( "name"	=> __( 'Your twitter URL', 'responsive' ),
+ 		// 	"desc"	=> __( 'Enter your twitter URL here. (https://twitter.com/intent/user?screen_name=YOUR TWITTER NAME)', 'responsive' ),
+			// 'id'	=> "twitter_link",
+			// 'std'	=> "",
+			// 'type'	=> "text" );
+
+ 
+
+ 		// $of_options[] = array( "name"	=> __( 'Your LinkedIn URL', 'responsive' ),
+ 		// 	"desc"	=> __( 'Enter the URL to your public LinkedIn page. (http://www.linkedin.com/in/YOUR LINKEDIN NAME)', 'responsive' ),
+			// 'id'	=> 'linkedin_link',
+			// 'std'	=> '#',
+			// 'type'	=> 'text' );
 
 		// $url =  ADMIN_DIR . 'assets/images/';					
 		// $of_options[] = array( "name"	=> __( 'Social Style', 'responsive' ),

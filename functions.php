@@ -40,6 +40,11 @@ require_once('functions/Redirect-Manager/redirect-manager.php');
 // Google Plus Authorhip
 require_once('functions/google-plus-authorship.php');
 
+
+
+// Load Social Follow Widget
+require_once('functions/Widgets/Twitter-Widget.php');
+
 /*
 // Bootstrap carousel !!! Har problem med featured image i Admin posts
 require_once('functions/bootstrap-carousel.php');
