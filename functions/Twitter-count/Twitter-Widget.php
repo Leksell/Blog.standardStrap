@@ -1,14 +1,4 @@
 <?php
-
-/**
- * Twitter Widget
- * Description: A Twitter widget that show count and link to follow page
- * Version: 1.0
- * Author: Frederik Leksell
- * Author URI: http://frederik.se
- */
-
-
 ///////////////////////////////////////////////////////////////////////////////
 // multi instance twitter widget
 ///////////////////////////////////////////////////////////////////////////////
@@ -31,27 +21,25 @@ $twitter_user_secret = isset($instance['twitter_user_secret']) ? $instance['twit
 $twitter_username = isset($instance['twitter_username']) ? $instance['twitter_username'] : "";
 
 
+$twitter_title = empty($instance['title']) ? __('standardStrap Twitter Counter', TEMPLATE_DOMAIN) : apply_filters('widget_title', $instance['title']);
 $unique_id = $args['widget_id'];
 
 
 echo $before_widget;
-?>
+echo $before_title . $twitter_title . $after_title; ?>
 
 
-        
-<div class="ss-Twitter">
+
   <a class="twitter-count-link" href="https://twitter.com/<?php echo $twitter_username; ?>">
-  	<i class="fa fa-twitter fa-2x twitter-ikon"></i><span class="twitter-count">
 <?php echo wp_dez_get_twitter_count (
 $twitter_username,
 $twitter_consumer_key,
 $twitter_consumer_secret,
 $twitter_user_token,
 $twitter_user_secret );
-?> 
+?> </a>
 
-</a></div>
-
+</ul>
 <?php echo $after_widget;
 }
 
@@ -66,10 +54,13 @@ $twitter_consumer_key = isset($instance['twitter_consumer_key']) ? $instance['tw
 $twitter_consumer_secret = isset($instance['twitter_consumer_secret']) ? $instance['twitter_consumer_secret'] : "";
 $twitter_user_token = isset($instance['twitter_user_token']) ? $instance['twitter_user_token'] : "";
 $twitter_user_secret = isset($instance['twitter_user_secret']) ? $instance['twitter_user_secret'] : "";
-$twitter_username = isset($instance['twitter_username']) ? $instance['twitter_username'] : "";
-
+$twitter_title = empty($instance['title']) ? __('My Twitter Count!', TEMPLATE_DOMAIN) : apply_filters('widget_title', $instance['title']);
 ?>
 
+<p>
+<label for="<?php echo $this->get_field_id('title'); ?>"><?php _e("Twitter Title:",TEMPLATE_DOMAIN); ?></label>
+<input class="widefat" type="text" id="<?php echo $this->get_field_id('title'); ?>" name="<?php echo $this->get_field_name('title'); ?>" value="<?php echo $twitter_title; ?>" />
+</p>
 
 <p><label for="<?php echo $this->get_field_id('twitter_consumer_key'); ?>">
 <?php echo __('Twitter Consumer Key:', TEMPLATE_DOMAIN)?></label>
@@ -91,10 +82,6 @@ $twitter_username = isset($instance['twitter_username']) ? $instance['twitter_us
 <input class="widefat" type="text" id="<?php echo $this->get_field_id('twitter_user_secret'); ?>" name="<?php echo $this->get_field_name('twitter_user_secret'); ?>" value="<?php echo $twitter_user_secret; ?>" />
 </p>
 
-<p><label for="<?php echo $this->get_field_id('twitter_username'); ?>">
-<?php echo __('Twitter ID:', TEMPLATE_DOMAIN)?></label>
-<input class="widefat" type="text" id="<?php echo $this->get_field_id('twitter_username'); ?>" name="<?php echo $this->get_field_name('twitter_username'); ?>" value="<?php echo $twitter_username; ?>" />
-</p>
 <?php
 }
 }

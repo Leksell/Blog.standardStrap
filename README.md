@@ -65,15 +65,16 @@ DONE - Mobile device desktop icon
 
 DONE - Google Plus Authorship integration in user profiles
 
+DONE - My Twitter count Widget
+
+DONE - Integrated Google (XML) Sitemaps Generator for WordPress, just be cuss its damn good!
+
 Mostly Done- Total cleanup before version 1.0
 
 Check SEO* Working on it...
 
 Site Speed optimization* Working on it...
 
-Social Follow me buttons/icons
-
-Gooogle XML Sitemap integration
 
 
 
@@ -102,7 +103,7 @@ Off Canvas menu widget
 /////////////////////////////////////////////////////////////////////////////////////////
 Know problems
 ----------------------------------------------------------------------------------------
-Drop down in menu broken, woops ;-)
+SOLVED - Drop down in menu broken, woops ;-)
 
 SOLVED - Off Canvas not working on pages
 
@@ -110,3 +111,5 @@ SOLVED - Off Canvas not working on pages
 
 /////////////////////////////////////////////////////////////////////////////////////////
 OBS! Not recommended for use on a production/live site as is!
+
+

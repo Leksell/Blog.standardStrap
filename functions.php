@@ -40,7 +40,11 @@ require_once('functions/Redirect-Manager/redirect-manager.php');
 // Google Plus Authorhip
 require_once('functions/google-plus-authorship.php');
 
+// XML Sitemap
+require_once('functions/XML-Sitemap/sitemap.php');
 
+// Twitter Count
+require_once('functions/twitter-count.php');
 
 // Load Social Follow Widget
 require_once('functions/Widgets/Twitter-Widget.php');
