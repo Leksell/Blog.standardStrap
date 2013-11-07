@@ -12,8 +12,8 @@
 ///////////////////////////////////////////////////////////////////////////////
 // multi instance twitter widget
 ///////////////////////////////////////////////////////////////////////////////
-class My_THEME_Twitter_Widget extends WP_Widget {
-function My_THEME_Twitter_Widget() {
+class standardStrap_Twitter_Widget extends WP_Widget {
+function standardStrap_Twitter_Widget() {
 //Constructor
 parent::WP_Widget(false, $name = ' standardStrap Twitter Counter', array(
 'description' => __('Display your twitter follower count.', TEMPLATE_DOMAIN)
@@ -98,7 +98,7 @@ $twitter_username = isset($instance['twitter_username']) ? $instance['twitter_us
 <?php
 }
 }
-register_widget('My_THEME_Twitter_Widget');
+register_widget('standardStrap_Twitter_Widget');
 		
 ?>
 

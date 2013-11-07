@@ -107,7 +107,7 @@ SOLVED - Drop down in menu broken, woops ;-)
 
 SOLVED - Off Canvas not working on pages
 
-
+Twitter widget error when activate plugins. page halt.
 
 /////////////////////////////////////////////////////////////////////////////////////////
 OBS! Not recommended for use on a production/live site as is!
