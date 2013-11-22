@@ -40,6 +40,13 @@ require_once('functions/Redirect-Manager/redirect-manager.php');
 // Google Plus Authorhip
 require_once('functions/google-plus-authorship.php');
 
+//Load Google fonts
+function load_fonts() {
+            wp_register_style('googleFonts', 'http://fonts.googleapis.com/css?family=Open+Sans|Raleway:100,200,400,700');
+            wp_enqueue_style( 'googleFonts');
+        }
+ 
+    add_action('wp_print_styles', 'load_fonts');
 
 // Twitter Count
 require_once('functions/twitter-count.php');

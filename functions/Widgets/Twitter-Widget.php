@@ -100,5 +100,5 @@ $twitter_username = isset($instance['twitter_username']) ? $instance['twitter_us
 }
 register_widget('standardStrap_Twitter_Widget');
 		
-?>
+
 
