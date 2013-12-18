@@ -4,6 +4,18 @@
 		"selected_items":
 		[
 			[
+				"s",
+				"show	show"
+			],
+			[
+				"title",
+				"titlediv"
+			],
+			[
+				"J",
+				"jQuery"
+			],
+			[
 				"Frede",
 				"Frederik"
 			],
@@ -68,30 +80,12 @@
 	"buffers":
 	[
 		{
-			"file": "functions.php",
+			"contents": "<script type=\"text/javascript\">\n\n  var _gaq = _gaq || [];\n  _gaq.push(['_setAccount', 'UA-28315297-1']);\n  _gaq.push(['_trackPageview']);\n\n  setTimeout(\"_gaq.push(['_trackEvent', '30_seconds', 'read'])\", 30000);\n\n  (function() {\n    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;\n    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';\n    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);\n  })();\n\n</script>",
 			"settings":
 			{
-				"buffer_size": 9046,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"contents": "/* \nTheme Name: Blog.standardStrap\nTheme URI: http://frederik.se/standardstrap\nDescription: Responsive WordPress theme with all the Twitter Bootstrap 3 elements and features. Also includes different page layouts, custom post types and much more.\n\nAuthor: Frederik Leksell \nAuthor URI: http://frederik.se\nVersion: 0.8.0\nTags: white, black, green, light, custom-menu, custom-header, custom-background, one-column, two-columns, left-sidebar, responsive, theme-options, threaded-comments, full-width-template, translation-ready, bootstrap 3\n\nCopyright (C) 2013 Frederik leksell \nLicense: GNU General Public License, version 3 (GPLv3)\nLicense URI: license.txt \n\n*/\n@import \"http://fonts.googleapis.com/css?family=Open+Sans|Raleway:100,200,400,700\";\n\n\nbody {\nbackground-color:#333;\ncolor:#232323;\nfont-size:14px;\nfont-family:Open Sans,sans-serif;\n}\n\np {\ncolor:#232323;\nword-wrap:break-word;\nfont-size:14px;\nfont-family:Open Sans,sans-serif;\n}\n\nh1,h1 a,h1 a:visited {\npadding-bottom:6px;\ncolor:#232323;\nfont-weight:100!important;\nfont-family:Raleway,sans-serif!important;\nline-height:45px;\n}\n\nh2,h2 a,h2 a:visited {\ncolor:#232323;\nfont-weight:100!important;\nfont-family:Raleway,sans-serif!important;\n}\n\nh3,h3 a,h3 a:visited {\ncolor:#232323;\nfont-weight:400!important;\nfont-family:Raleway,sans-serif!important;\n}\n\nh4,h4 a,h4 a:visited {\ncolor:#232323;\nfont-weight:400!important;\nfont-family:Raleway,sans-serif!important;\n}\n\nh5,h5 a,h5 a:visited {\ncolor:#A9D300;\nfont-style:italic;\nfont-family:Raleway,sans-serif!important;\n}\n\nh6,h6 a,h6 a:visited {\ncolor:#232323;\nfont-style:italic;\nfont-family:Raleway,sans-serif!important;\n}\n\nh1 a:hover {\ncolor:#666;\ntext-decoration:none;\n}\n\nh2 a:hover {\ncolor:#666;\ntext-decoration:none;\n}\n\nh3 a:hover {\ncolor:#666;\ntext-decoration:none;\n}\n\nh4 a:hover {\ncolor:#666;\ntext-decoration:none;\n}\n\nh5 a:hover {\ncolor:#232323;\ntext-decoration:none;\n}\n\nh6 a:hover {\ncolor:#666;\ntext-decoration:none;\n}\n\na {\ncolor:#A9D300;\n}\n\na:hover {\ncolor:#232323;\ntext-decoration:none;\n}\n\na:acitive {\ncolor:#A9D300;\n}\n\na:visited {\ncolor:#A9D300;\n}\n\n.navbar-fixed-top {\nposition:absolute;\ntop:0!important;\n}\n\n.contnet-image-post p {\nmargin-right:15px;\nmargin-left:15px;\n}\n\n.contnet-image-post h1 {\nmargin-right:15px;\n}\n\n#wrapper {\nposition:relative;\nclear:both;\nmargin-top:60px;\n}\n\ni {\ncolor:#A9D300;\n}\n\n.navbar-fixed-top {\nmargin-bottom:18px!important;\n}\n\n.navbar {\nmargin-bottom:0;\nborder:0 solid transparent;\n}\n\n.dropdown-menu>li>a:hover {\nbackground-color:#A9D300;\n}\n.dropdown-menu li  {\n list-style-type:none;\n}\n.dropdown-menu>.active>a,.dropdown-menu>.active>a:hover {\nbackground-color:#A9D300;\n}\n\n.navbar-inverse .navbar-nav>.active>a,.navbar-inverse .navbar-nav>.active>a:hover,.navbar-inverse .navbar-nav>.active>a:focus {\nbackground-color:#333;\ncolor:#fff;\n}\n\n.navbar-inverse .navbar-nav>.open>a,.navbar-inverse .navbar-nav>.open>a:hover,.navbar-inverse .navbar-nav>.open>a:focus {\nbackground-color:#333;\ncolor:#fff;\n}\n\n.navbar-fixed-top {\nborder-bottom:0 solid transparent;\n}\n\n.navbar-inverse {\nborder-color:#fff;\nbackground-color:#fff;\n}\n\n.nav-border {\nheight:7px;\nbackground-color:#b262a4;\n}\n\n.navbar-default {\nbackground-color:#fff;\n}\n\n#outer-wrap {\nposition:relative;\noverflow:hidden;\nwidth:100%;\n}\n\n#inner-wrap {\nposition:relative;\nwidth:100%;\n}\n\n#nav {\nposition:relative;\nz-index:200;\noverflow:hidden;\nwidth:100%;\ncolor:#fff;\n}\n\n#nav .close-btn {\ndisplay:none;\n}\n\n.navbar-brand {\ncolor:#232323!important;\nfont-weight:200!important;\nfont-size:26px;\nfont-family:Raleway,sans-serif!important;\n}\n\n.navbar-default .navbar-nav>.active>a,.navbar-default .navbar-nav>.active>a:hover {\nbackground-color:#A9D300;\ncolor:fff;\n}\n\n.navbar-default .navbar-nav {\ncolor:#232323!important;\nfont-weight:400!important;\nfont-size:14px;\nfont-family:Raleway,sans-serif!important;\n}\n\n.navbar-default .navbar-nav>.open>a,.navbar-default .navbar-nav>.open>a:hover,.navbar-default .navbar-nav>.open>a:focus {\nbackground-color:#A9D300;\ncolor:fff;\n}\n\n.navbar-default .navbar-nav>li>a:hover {\nbackground-color:#A9D300;\ncolor:fff;\n}\n\n.dropdown-menu>li>a:hover {\nbackground-color:#A9D300;\n}\n\n.navbar-default .navbar-nav>.dropdown>a:hover .caret,.navbar-default .navbar-nav>.dropdown>a:focus .caret {\nborder-top-color:#fff;\nborder-bottom-color:#fff;\n}\n\n#footer .social-icons {\nmargin:2px 0 0;\npadding:0 0 30px;\ntext-align:right;\nfont-size:32px;\nline-height:22px;\n}\n\n#footer .social-icons a,#header .social-icons a {\ntext-decoration:none;\n}\n\n#header .social-icons {\nmargin:5px 0 0;\nfont-size:32px;\nline-height:normal;\n}\n\nfieldset {\nmargin:0 0 1.5em;\npadding:1em 2em;\n}\n\nlegend {\npadding:2px 5px;\n}\n\nlabel {\ndisplay:block;\npadding:2px 0;\nfont-weight:700;\n}\n\nselect {\nwidth:70%;\nheight:auto;\n}\n\ntextarea,.area {\noverflow:auto;\nmargin:0;\npadding:8px 10px;\nwidth:100%;\nheight:auto;\noutline:0;\n}\n\ninput,select {\ncursor:pointer;\n}\n\ninput:focus,textarea:focus,area:focus {\nbackground:#fff;\n}\n\ninput[type=text],input[type=password] {\ncursor:text;\n}\n\nspan.error {\ncolor:#B94A48;\n}\n\ndiv.sharedaddy div.sd-block {\npadding:0!important;\nborder-top:0 solid transparent!important;\n}\n\n.sd-title {\ndisplay:none;\n}\n\n.sd-content {\nfloat:left!important;\npadding-top:5px;\n}\n\ndiv.sharedaddy .sd-content {\nwidth:100%!important;\n}\n\nul li {\nlist-style-type:disc;\n}\n\nul ul {\nlist-style-type:square;\n}\n\nul ul ul {\nlist-style-type:circle;\n}\n\nol {\nlist-style-position:outside;\nlist-style-type:decimal;\nline-height:22px;\n}\n\ndt {\nfont-weight:400;\n}\n\n.comment li,ol.commentlist {\nlist-style:none;\n}\n\n.sidebar ul li {\ncolor:#A9D300;\nlist-style-type:square;\n}\n\n.sidebar a {\ncolor:#232323;\n}\n\n.sidebar a:hover {\ncolor:#666;\n}\n\n.sidebar-right {\nfloat:right!important;\nmargin-bottom:2.083%;\nmargin-left:0!important;\npadding-top:0;\n}\n\n.content-right {\nfloat:right!important;\nmargin-right:0!important;\nmargin-bottom:2.083%;\nmargin-left:0!important;\npadding-top:0;\n}\n\nimg {\nmax-width:100%;\nheight:auto;\n}\n\n.wp-post-image {\ndisplay:block;\nfloat:left;\nmargin:0 15px 10px 0;\nwidth:auto;\n}\n\n.single-main .wp-post-image {\npadding-bottom:5px;\n}\n.ss-twitter {text-align:center!important;} .twitter-count {font-size:28px; font-weight:200; margin-left:5px; color:#A9D300; font-family:Raleway,sans-serif!important; position:relative; bottom:3px;}\n.widget {\nmargin-bottom:20px;\n}\n\n.sidebar .widget {\nmargin-bottom:15px;\npadding:10px 15px 10px;\nborder-radius:2px;\nbackground-color:#fff;\n}\n\n.margin-sidebar {\nmargin-top:15px;\npadding:0;\nborder-radius:2px;\nbackground-color:transparent;\n}\n\n.whr {\nborder-radius:0 0 30px;\nbackground-color:#f59450;\ncolor:#fff;\n}\n\n.tagcloud a,.tagcloud a:visited {\npadding-right:4px;\npadding-left:4px;\nborder-radius:2px;\nbackground-color:#A9D300;\ncolor:#fff;\nword-wrap:norma!important;\nfont-size:14px!important;\nline-height:24px;\n}\n\n.tagcloud a:hover {\ncolor:#232323;\n}\n\n.single-main,.blog-main,.page-main {\nmargin-top:15px;\npadding:15px;\nborder-radius:2px;\nbackground-color:#FFF;\n}\n\n.post-meta {\nclear:both;\nmargin-bottom:10px;\ncolor:#999;\ntext-transform:uppercase;\nfont-weight:200;\nfont-size:13px;\n}\n\n.post-meta a,.post-meta a:visited {\ncolor:#999;\n}\n\n.post-meta a:hover {\ncolor:#232323;\n}\n\n.post-meta .avatar {\nwidth:15px;\nborder-radius:7px;\n}\n\n.post-meta-bottom {\nclear:both;\nmargin-bottom:0;\ncolor:#999;\ntext-transform:uppercase;\nfont-weight:200;\nfont-size:13px;\n}\n\n.post-meta-bottom a,.post-meta-bottom a:visited {\ncolor:#999;\n}\n\n.post-meta-bottom a:hover {\ncolor:#232323;\n}\n\n.post-meta-bottom .avatar {\nwidth:15px;\nborder-radius:7px;\n}\n\n.related-h3 {\ncolor:#232323;\nfont-weight:400!important;\nfont-size:14px;\nfont-family:Raleway,sans-serif!important;\nline-height:25px;\n}\n\n.relatedposts {\nmargin-bottom:10px;\n}\n\n.related-h3 {\nmargin-left:10px;\n}\n\n.relatedheading i {\nmargin-top:5px;\n}\n\nh3#comments {\ncolor:#232323;\nfont-weight:400!important;\nfont-size:22px;\nfont-family:Raleway,sans-serif!important;\n}\n\n.comment-author .avatar {\nborder-radius:20px;\n}\n\n.comment-author {\ncolor:#232323;\nfont-weight:400!important;\nfont-size:18px;\nfont-family:Raleway,sans-serif!important;\nline-height:25px;\n}\n\n.comment-meta.commentmetadata a {\ncolor:#999;\ntext-transform:uppercase;\nfont-weight:200;\nfont-size:13px;\n}\n\n.comment {\nmargin-top:20px;\nmargin-bottom:20px;\n}\n\n#respond h3 {\ncolor:#232323;\nfont-weight:400!important;\nfont-size:22px;\nfont-family:Raleway,sans-serif!important;\n}\n\n#respond input {\nborder:1px solid #999;\n}\n\n#respond textarea {\nborder:1px solid #999;\n}\n\n#respond #submit {\npadding:10px;\nborder:0 solid transparent;\nbackground-color:#A9D300;\ncolor:#fff;\n}\n\n#commentform label {\ncolor:#999;\ntext-transform:uppercase;\nfont-weight:200;\nfont-size:13px;\n}\n\n.blog-main {\nmargin-top:15px;\npadding:15px 15px 3px;\nbackground-color:#FFF;\n}\n\n.page-landing {\nmargin-top:0;\npadding:15px;\nborder-radius:2px;\nbackground-color:#FFF;\n}\n\n.error404 h1 {\ncolor:fff;\n}\n\n.error404 p {\ncolor:fff;\n}\n\nh4.sidebar-pages-right {\nfont-weight:200!important;\n}\n\n.copyright {\nmargin-top:15px;\nheight:40px;\nbackground-color:#fff;\n}\n\n.credits {\npadding:10px;\ncolor:#232323;\nfont-weight:400!important;\nfont-size:12px;\nfont-family:Raleway,sans-serif!important;\n}\n\n.footer-holder .widget {\nmargin-bottom:15px;\npadding:1px 15px 10px;\nborder-radius:2px;\nbackground-color:#666;\ncolor:#fff;\n}\n\n.footer-holder {\nmargin-top:15px;\n}\n\n.footer-holder ul li {\ncolor:#fff;\nlist-style-type:square;\n}\n\n.footer-holder a {\ncolor:#fff;\n}\n\n.footer-holder a:hover {\ncolor:#A9D300;\n}\n\n.footer-holder h4.widgettitle {\ncolor:#fff;\nfont-weight:200!important;\n}\n\n.to-top {\nposition:fixed;\nright:15px;\nbottom:40px;\ndisplay:none;\ncolor:#232323;\nopacity:.7;\n}\n\n.format-link .entry-title {\nmargin-bottom:30px;\npadding-left:30px;\n}\n\n.fa.fa-link.fa-3x.format-link {\nfont-weight:700;\n}\n\nh1.quote {\npadding-left:30px;\n}\n\n.show-avatar .avatar {\nfloat:left;\nmargin-right:15px;\nmargin-bottom:15px;\nborder-radius:50px;\n}\n\n.contnet-image-post {\npadding-right:0;\npadding-left:0;\n}\n\n.image-post-title {\npadding-left:15px;\n}\n\n.contnet-image-post .post-meta.meta-options {\npadding-left:15px;\n}\n\n.meta-main {\nmargin-top:15px;\npadding:15px;\nbackground-color:#FFF;\n}\n\n.archive_title,.search-title {\nmargin-top:10px;\ncolor:#fff;\nfont-size:18px;\n}\n\n.sidebar .widget_search {\npadding:0;\nbackground-color:#fff;\n}\n\n.searchbox {\npadding:10px;\nborder-radius:2px;\nbackground-color:#A9D300;\n}\n\nh4.sidebar-default {\nfont-weight:200!important;\n}\n\n.searchbox input {\npadding:5px;\nwidth:100%;\nborder:0;\ncolor:#232323;\n}\n\n.page-header {\nmargin:0;\nborder:0 solid transparent;\nfont-size:24px!important;\n}\n\nh1,h2,h3 {\nmargin-top:0;\nmargin-bottom:10px;\n}\n\n.float-right {\nfloat:right;\n}\n\n.float-left {\nfloat:left;\n}\n\n.clearfix:after {\ndisplay:block;\nvisibility:hidden;\nclear:both;\nheight:0;\ncontent:\".\";\nline-height:0;\n}\n\nhr {\nfloat:none;\nclear:both;\nmargin:0 0 10px;\nwidth:100%;\nheight:1px;\nborder:0;\nbackground:#E0E0E0;\ncolor:#ddd;\n}\n\nhr.space {\nbackground:#fff;\ncolor:#fff;\n}\n\n.meta-hr-margin {\nmargin-top:20px;\n}\n\n#top .nav-btn {\nposition:absolute;\ntop:1.5em;\nleft:1.875em;\n}\n\n#nav-open-btn i {\nposition:absolute;\ntop:8px;\nright:10px;\npadding:6px 9px;\nborder:1px solid #232323;\nborder-radius:5px;\ncolor:#232323;\ntext-decoration:none;\n}\n\n#nav-open-btn i:hover {\nposition:absolute;\ntop:8px;\nright:10px;\npadding:6px 9px;\nborder:1px solid #A9D300;\nborder-radius:5px;\ncolor:#A9D300;\ntext-decoration:none;\n}\n\n#nav-close-btn {\nposition:absolute;\ntop:13px;\nright:15px;\ncolor:#fff;\ntext-decoration:none;\n}\n\n#nav-close-btn:hover {\nposition:absolute;\ntop:13px;\nright:15px;\ncolor:#fff;\ntext-decoration:none;\ntext-decoration:none;\n}\n\n.btn-post {\nfloat:right;\nmargin-top:5px;\nmargin-right:20px;\n}\n\n.btn-primary {\nbackground-color:#A9D300;\ncolor:#fff!important;\nfont-weight:700!important;\nfont-family:Raleway,sans-serif!important;\n}\n\n.btn-primary:hover {\nbackground-color:#999;\ncolor:#fff!important;\n}\n\n.btn-default {\nbackground-color:#B262A4;\ncolor:#fff!important;\n}\n\n.btn-default:hover {\nbackground-color:#80477C;\ncolor:#fff!important;\n}\n\n.btn-success {\nbackground-color:#E0DED8;\ncolor:#000!important;\n}\n\n.btn-success:hover {\nbackground-color:#808285;\ncolor:#fff!important;\n}\n\n.btn-info {\nbackground-color:#808285;\ncolor:#fff!important;\n}\n\n.btn-info:hover {\nbackground-color:#E0DED8;\ncolor:#000!important;\n}\n\n.btn-warning {\nbackground-color:#F1703C;\ncolor:#fff!important;\n}\n\n.btn-warning:hover {\nbackground-color:#F59550;\ncolor:#fff!important;\n}\n\n.btn-danger {\ncolor:#fff!important;\n}\n\n.btn-danger:hover {\ncolor:#fff!important;\n}\n\n.btn {\nborder:0 solid transparent;\nborder-radius:0;\n}\n\n@media print {\nh1 {\npage-break-before:always;\n}\n\nh1,h2,h3,h4,h5,h6 {\npage-break-after:avoid;\n}\n\nul,ol,dl {\npage-break-before:avoid;\n}\n}\n\n@media (min-width:768px) {\n.navbar {\nborder-radius:0;\n}\n\n.navbar-nav {\nfloat:right;\n}\n\n#nav {\ndisplay:none!important;\n}\n\n#nav-open-btn {\ndisplay:none;\n}\n}\n\n@media (min-width:768px) and (max-width:991px) {\n.wp-post-image {\ndisplay:block;\nfloat:left;\nmargin:0 15px 0 0;\nmax-height:100px;\nwidth:auto;\n}\n\n.btn-post {\nfloat:right;\nmargin-right:20px;\nmargin-bottom:10px;\n}\n\n.single-main .wp-post-image {\npadding-bottom:15px;\n}\n}\n\n@media (min-width:991px) and (max-width:1200px) {\n.wp-post-image {\ndisplay:block;\nfloat:left;\nmargin:0 15px 0 0;\nmax-height:100px;\nwidth:auto;\n}\n\n.btn-post {\nfloat:right;\nmargin-right:20px;\nmargin-bottom:10px;\n}\n\n.single-main .wp-post-image {\npadding-bottom:15px;\n}\n}\n\n@media screen and (max-width:768px) {\nbody {\nword-wrap:break-word;\n}\n\np {\nword-wrap:break-word;\n}\n\nh1,h1 a {\npadding-bottom:0;\nword-wrap:break-word;\nfont-size:22px;\nline-height:24px!important;\n}\n\nh2 {\nword-wrap:break-word;\nfont-size:18px;\n}\n\nh3 {\nword-wrap:break-word;\nfont-size:16px;\n}\n\nh4 {\nword-wrap:break-word;\nfont-size:14px;\n}\n\nh5 {\nword-wrap:break-word;\nfont-size:14px;\n}\n\nh6 {\nword-wrap:break-word;\nfont-size:12px;\n}\n\nh1.single-title {\nmargin:0;\n}\n\n.navbar-nav {\nfloat:left;\n}\n\n.navbar {\nmin-height:50px;\n}\n\n.single-main,.blog-main,.page-main {\nmargin-top:10px;\npadding:8px;\n}\n\n.post-meta {\nfont-size:11px;\n}\n\n.wp-post-image {\ndisplay:none;\n}\n\n.format-link .entry-title {\nmargin-bottom:10px;\npadding-left:20px;\n}\n\n.format-link {\nfont-size:30px;\n}\n\nh1.quote {\npadding-left:20px!important;\n}\n\n. .quote-icons {\nfont-size:30px!important;\n}\n\n.show-avatar .avatar {\nfloat:left;\nmargin-right:10px;\nmargin-bottom:10px;\nwidth:50px;\nheight:50px;\nborder-radius:50px;\n}\n\n.image-post-title {\npadding-left:10px;\n}\n\n.contnet-image-post {\npadding-right:0;\npadding-left:0;\n}\n\n.contnet-image-post .contnet-image-post p {\nmargin-right:10px;\nmargin-left:10px;\n}\n\n.contnet-image-post h1 {\nmargin-right:10px;\n}\n\n.post-meta.meta-options {\npadding-left:10px;\n}\n\n.btn-post {\nfloat:right;\nmargin-right:20px;\nmargin-bottom:10px;\n}\n\n.offcanvas-diplay-none {\ndisplay:none;\n}\n\n.mobile-navbar .widget_search {\nmargin:5px;\npadding:0!important;\nborder-radius:2px;\nbackground-color:#444;\n}\n\nh4.mobile-menu {\ncolor:rgb(35, 35, 35);\nfont-weight:200!important;\nfont-size:20px;\nfont-family:Raleway,sans-serif!important;\n}\n\n.mobile-navbar a {\ncolor:#fff;\n}\n\n.mobile-navbar a:hover {\ncolor:#A9D300;\n}\n\n.mobile-navbar .mobile-widget {\nmargin:5px;\npadding:5px 8px 5px;\nborder-radius:2px;\nbackground-color:#fff;\n}\n\n.mobile-navbar ul li {\ncolor:#A9D300;\nlist-style-type:square;\n}\n\n#nav {\nposition:absolute;\ntop:0;\npadding-top:40px;\n}\n\n#nav:not(:target) {\nz-index:1;\nheight:0;\n}\n\n#nav:target .close-btn {\ndisplay:block;\n}\n\n#nav .close-btn {\nposition:absolute;\ntop:-3.75em;\nleft:1.875em;\n}\n\n#nav .block {\nposition:relative;\npadding:0;\n}\n\n.js-ready #nav {\nwidth:100%;\nheight:100%;\n}\n\n.js-ready #nav .block {\nbackground:transparent;\n}\n\n.js-ready #nav .close-btn {\ndisplay:block;\nopacity:.7;\nfilter:alpha(Opacity=70);\n}\n\n.js-ready #nav .close-btn:focus,.js-ready #nav .close-btn:hover {\nopacity:1;\nfilter:alpha(Opacity=100);\n}\n\n.js-ready #nav {\nleft:-100%;\n}\n\n.js-ready #inner-wrap {\nleft:0;\n}\n\n.js-nav #inner-wrap {\nleft:100%;\n}\n\n.csstransforms3d.csstransitions.js-ready #nav {\nleft:0;\n-webkit-transform:translate3d(-100%,0,0);\n-moz-transform:translate3d(-100%,0,0);\n-ms-transform:translate3d(-100%,0,0);\n-o-transform:translate3d(-100%,0,0);\ntransform:translate3d(-100%,0,0);\n-webkit-backface-visibility:hidden;\n-moz-backface-visibility:hidden;\n-ms-backface-visibility:hidden;\n-o-backface-visibility:hidden;\nbackface-visibility:hidden;\n}\n\n.csstransforms3d.csstransitions.js-ready #inner-wrap {\nleft:0!important;\n-webkit-transition:-webkit-transform 500ms ease;\n-moz-transition:-moz-transform 500ms ease;\n-o-transition:-o-transform 500ms ease;\ntransition:transform 500ms ease;\n-webkit-transform:translate3d(0,0,0);\n-moz-transform:translate3d(0,0,0);\n-ms-transform:translate3d(0,0,0);\n-o-transform:translate3d(0,0,0);\ntransform:translate3d(0,0,0);\n-webkit-backface-visibility:hidden;\n-moz-backface-visibility:hidden;\n-ms-backface-visibility:hidden;\n-o-backface-visibility:hidden;\nbackface-visibility:hidden;\n}\n\n.csstransforms3d.csstransitions.js-nav #inner-wrap {\n-webkit-transform:translate3d(100%,0,0) scale3d(1,1,1);\n-moz-transform:translate3d(100%,0,0) scale3d(1,1,1);\n-ms-transform:translate3d(100%,0,0) scale3d(1,1,1);\n-o-transform:translate3d(100%,0,0) scale3d(1,1,1);\ntransform:translate3d(100%,0,0) scale3d(1,1,1);\n}\n\n.csstransforms3d.csstransitions.js-ready #nav .block {\nopacity:.7;\nfilter:alpha(Opacity=70);\n-webkit-transition:opacity 300ms 100ms,-webkit-transform 500ms ease;\n-moz-transition:opacity 300ms 100ms ease,-moz-transform 500ms ease;\n-o-transition:opacity 300ms 100ms ease,-o-transform 500ms ease;\ntransition:opacity 300ms 100ms ease,transform 500ms ease;\n-webkit-transition-delay:ease,0;\n-webkit-transform:translate3d(70%,0,0) scale3d(0.9,.9,.9);\n-moz-transform:translate3d(70%,0,0) scale3d(0.9,.9,.9);\n-ms-transform:translate3d(70%,0,0) scale3d(0.9,.9,.9);\n-o-transform:translate3d(70%,0,0) scale3d(0.9,.9,.9);\ntransform:translate3d(70%,0,0) scale3d(0.9,.9,.9);\n-webkit-transform-origin:50% 0;\n-moz-transform-origin:50% 0;\n-ms-transform-origin:50% 0;\n-o-transform-origin:50% 0;\ntransform-origin:50% 0;\n}\n\n.csstransforms3d.csstransitions.js-nav #nav .block {\nopacity:1;\nfilter:alpha(Opacity=100);\n-webkit-transform:translate3d(0,0,0);\n-moz-transform:translate3d(0,0,0);\n-ms-transform:translate3d(0,0,0);\n-o-transform:translate3d(0,0,0);\ntransform:translate3d(0,0,0);\n}\n}\n",
-			"file": "Edit Style.css",
-			"file_size": 18034,
-			"file_write_time": 1383865685000000,
-			"settings":
-			{
-				"buffer_size": 18034,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "functions/Widgets/Twitter-Widget.php",
-			"settings":
-			{
-				"buffer_size": 4347,
-				"line_ending": "Unix"
+				"buffer_size": 548,
+				"line_ending": "Unix",
+				"name": "<script type=\"text/javascript\">"
 			}
 		}
 	],
@@ -167,11 +161,18 @@
 	},
 	"file_history":
 	[
-		"/Users/Frederik/Sites/standardStrap/wp-content/themes/Blog.standardStrap/style.css",
+		"/Users/Frederik/Sites/standardStrap/wp-content/themes/Blog.standardStrap/library/js/jquery.1.10.2.min.js",
 		"/Users/Frederik/Sites/standardStrap/wp-content/themes/Blog.standardStrap/functions.php",
+		"/Users/Frederik/Sites/standardStrap/wp-content/themes/Blog.standardStrap/library/js/custom.js",
+		"/Users/Frederik/Sites/standardStrap/wp-content/themes/Blog.standardStrap/admin/functions/functions.php",
+		"/Users/Frederik/Sites/standardStrap/wp-content/themes/Blog.standardStrap/library/js/jquery.scrollToTop.js",
+		"/Users/Frederik/Sites/standardStrap/wp-content/themes/Blog.standardStrap/functions/lightbox/js/jquery.fancybox.pack.js",
 		"/Users/Frederik/Sites/standardStrap/wp-content/themes/Blog.standardStrap/index.php",
+		"/Users/Frederik/Sites/standardStrap/wp-content/themes/Blog.standardStrap/single.php",
+		"/Users/Frederik/Sites/standardStrap/wp-content/themes/Blog.standardStrap/content.php",
 		"/Users/Frederik/Sites/standardStrap/wp-content/themes/Blog.standardStrap/Edit Style.css",
 		"/Users/Frederik/Sites/standardStrap/wp-content/themes/Blog.standardStrap/functions/Widgets/Twitter-Widget.php",
+		"/Users/Frederik/Sites/standardStrap/wp-content/themes/Blog.standardStrap/style.css",
 		"/Users/Frederik/Sites/standardStrap/wp-content/themes/Blog.standardStrap/README.md",
 		"/Users/Frederik/Sites/standardStrap/wp-content/themes/Blog.standardStrap/functions/XML-Sitemap/sitemap-core.php",
 		"/Users/Frederik/Sites/standardStrap/wp-content/themes/Blog.standardStrap/functions/XML-Sitemap/sitemap-ui.php",
@@ -187,14 +188,12 @@
 		"/Users/Frederik/Sites/standardStrap/wp-content/themes/Blog.standardStrap/content-status.php",
 		"/Users/Frederik/Sites/standardStrap/wp-content/themes/Blog.standardStrap/library/css/font-awesome.min.css",
 		"/Users/Frederik/Sites/standardStrap/wp-content/themes/Blog.standardStrap/library/css/bootstrap.min.css",
-		"/Users/Frederik/Sites/standardStrap/wp-content/themes/Blog.standardStrap/library/js/jquery.scrollToTop.js",
 		"/Users/Frederik/Sites/standardStrap/wp-content/themes/Blog.standardStrap/functions/lightbox/js/lightbox.js",
 		"/Users/Frederik/Sites/standardStrap/wp-content/themes/Blog.standardStrap/library/js/main.js",
 		"/Users/Frederik/Sites/standardStrap/wp-content/themes/Blog.standardStrap/library/js/modernizr.js",
 		"/Users/Frederik/Sites/standardStrap/wp-content/themes/Blog.standardStrap/functions/lightbox/css/jquery.fancybox.css",
 		"/Users/Frederik/Sites/standardStrap/wp-content/themes/Blog.standardStrap/content-image.php",
 		"/Users/Frederik/Sites/standardStrap/wp-content/themes/Blog.standardStrap/content-quote.php",
-		"/Users/Frederik/Sites/standardStrap/wp-content/themes/Blog.standardStrap/content.php",
 		"/Users/Frederik/Sites/standardStrap/wp-content/themes/Blog.standardStrap/author.php",
 		"/Users/Frederik/Sites/standardStrap/wp-content/themes/Blog.standardStrap/404.php",
 		"/Users/Frederik/Sites/standardStrap/wp-content/themes/Blog.standardStrap/archive.php",
@@ -203,7 +202,6 @@
 		"/Users/Frederik/Sites/standardStrap/wp-content/themes/Blog.standardStrap/page-landingpage.php",
 		"/Users/Frederik/Sites/standardStrap/wp-content/themes/Blog.standardStrap/page.php",
 		"/Users/Frederik/Sites/standardStrap/wp-content/themes/Blog.standardStrap/page-full-width.php",
-		"/Users/Frederik/Sites/standardStrap/wp-content/themes/Blog.standardStrap/single.php",
 		"/Users/Frederik/Sites/standardStrap/wp-content/themes/Blog.standardStrap/screenshot.png",
 		"/Users/Frederik/Sites/standardStrap/wp-content/themes/Blog.standardStrap/searchform.php",
 		"/Users/Frederik/Sites/standardStrap/wp-content/themes/Blog.standardStrap/sidebar-pages.php",
@@ -211,7 +209,6 @@
 		"/Users/Frederik/Sites/standardStrap/wp-content/themes/Blog.standardStrap/functions/widgets/social-widget.php",
 		"/Users/Frederik/Sites/standardStrap/wp-content/themes/Blog.standardStrap/functions/social-icons.php",
 		"/Users/Frederik/Sites/standardStrap/wp-content/themes/Blog.standardStrap/images/icon-comment.png",
-		"/Users/Frederik/Sites/standardStrap/wp-content/themes/Blog.standardStrap/functions/lightbox/js/jquery.fancybox.pack.js",
 		"/Users/Frederik/Sites/standardStrap/wp-content/themes/Blog.standardStrap/admin/index.php",
 		"/Users/Frederik/Sites/standardStrap/wp-content/themes/Blog.standardStrap/admin/front-end/admin-opstions-css.php",
 		"/Users/Frederik/Sites/standardStrap/wp-content/themes/Blog.standardStrap/admin/front-end/options.php",
@@ -268,6 +265,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"jquer",
 			"ol",
 			"li",
 			"ul",
@@ -321,27 +319,27 @@
 	"groups":
 	[
 		{
-			"selected": 2,
+			"selected": 0,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "functions.php",
 					"settings":
 					{
-						"buffer_size": 9046,
+						"buffer_size": 548,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1863,
-								1863
+								211,
+								141
 							]
 						],
 						"settings":
 						{
+							"auto_name": "<script type=\"text/javascript\">",
 							"codeintel": true,
 							"codeintel_config":
 							{
@@ -446,272 +444,10 @@
 							},
 							"codeintel_tooltips": "popup",
 							"sublime_auto_complete": true,
-							"syntax": "Packages/PHP/PHP.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
+							"syntax": "Packages/Text/Plain text.tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 258.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "Edit Style.css",
-					"settings":
-					{
-						"buffer_size": 18034,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								5302,
-								5305
-							]
-						],
-						"settings":
-						{
-							"codeintel": true,
-							"codeintel_config":
-							{
-								"JavaScript":
-								{
-									"codeintel_max_recursive_dir_depth": 2.0,
-									"codeintel_scan_files_in_project": false,
-									"javascriptExtraPaths":
-									[
-									]
-								},
-								"PHP":
-								{
-									"codeintel_max_recursive_dir_depth": 5.0,
-									"codeintel_scan_files_in_project": false,
-									"phpExtraPaths":
-									[
-									]
-								},
-								"Python":
-								{
-									"env":
-									{
-									}
-								}
-							},
-							"codeintel_enabled_languages":
-							[
-								"JavaScript",
-								"Mason",
-								"XBL",
-								"XUL",
-								"RHTML",
-								"SCSS",
-								"Python",
-								"HTML",
-								"Ruby",
-								"Python3",
-								"XML",
-								"Sass",
-								"XSLT",
-								"Django",
-								"HTML5",
-								"Perl",
-								"CSS",
-								"Twig",
-								"Less",
-								"Smarty",
-								"Node.js",
-								"Tcl",
-								"TemplateToolkit",
-								"PHP"
-							],
-							"codeintel_live": true,
-							"codeintel_live_enabled_languages":
-							[
-								"JavaScript",
-								"Mason",
-								"XBL",
-								"XUL",
-								"RHTML",
-								"SCSS",
-								"Python",
-								"HTML",
-								"Ruby",
-								"Python3",
-								"XML",
-								"Sass",
-								"XSLT",
-								"Django",
-								"HTML5",
-								"Perl",
-								"CSS",
-								"Twig",
-								"Less",
-								"Smarty",
-								"Node.js",
-								"Tcl",
-								"TemplateToolkit",
-								"PHP"
-							],
-							"codeintel_max_recursive_dir_depth": 10.0,
-							"codeintel_scan_exclude_dir":
-							{
-								"JavaScript":
-								[
-									"/build/",
-									"/min/"
-								]
-							},
-							"codeintel_scan_files_in_project": true,
-							"codeintel_selected_catalogs":
-							[
-								"PyWin32",
-								"jQuery",
-								"Rails"
-							],
-							"codeintel_snippets": true,
-							"codeintel_syntax_map":
-							{
-								"Python Django": "Python"
-							},
-							"codeintel_tooltips": "popup",
-							"sublime_auto_complete": true,
-							"syntax": "Packages/CSS/CSS.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 4799.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "functions/Widgets/Twitter-Widget.php",
-					"settings":
-					{
-						"buffer_size": 4347,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								4114,
-								4168
-							]
-						],
-						"settings":
-						{
-							"codeintel": true,
-							"codeintel_config":
-							{
-								"JavaScript":
-								{
-									"codeintel_max_recursive_dir_depth": 2.0,
-									"codeintel_scan_files_in_project": false,
-									"javascriptExtraPaths":
-									[
-									]
-								},
-								"PHP":
-								{
-									"codeintel_max_recursive_dir_depth": 5.0,
-									"codeintel_scan_files_in_project": false,
-									"phpExtraPaths":
-									[
-									]
-								},
-								"Python":
-								{
-									"env":
-									{
-									}
-								}
-							},
-							"codeintel_enabled_languages":
-							[
-								"JavaScript",
-								"Mason",
-								"XBL",
-								"XUL",
-								"RHTML",
-								"SCSS",
-								"Python",
-								"HTML",
-								"Ruby",
-								"Python3",
-								"XML",
-								"Sass",
-								"XSLT",
-								"Django",
-								"HTML5",
-								"Perl",
-								"CSS",
-								"Twig",
-								"Less",
-								"Smarty",
-								"Node.js",
-								"Tcl",
-								"TemplateToolkit",
-								"PHP"
-							],
-							"codeintel_live": true,
-							"codeintel_live_enabled_languages":
-							[
-								"JavaScript",
-								"Mason",
-								"XBL",
-								"XUL",
-								"RHTML",
-								"SCSS",
-								"Python",
-								"HTML",
-								"Ruby",
-								"Python3",
-								"XML",
-								"Sass",
-								"XSLT",
-								"Django",
-								"HTML5",
-								"Perl",
-								"CSS",
-								"Twig",
-								"Less",
-								"Smarty",
-								"Node.js",
-								"Tcl",
-								"TemplateToolkit",
-								"PHP"
-							],
-							"codeintel_max_recursive_dir_depth": 10.0,
-							"codeintel_scan_exclude_dir":
-							{
-								"JavaScript":
-								[
-									"/build/",
-									"/min/"
-								]
-							},
-							"codeintel_scan_files_in_project": true,
-							"codeintel_selected_catalogs":
-							[
-								"PyWin32",
-								"jQuery",
-								"Rails"
-							],
-							"codeintel_snippets": true,
-							"codeintel_syntax_map":
-							{
-								"Python Django": "Python"
-							},
-							"codeintel_tooltips": "popup",
-							"sublime_auto_complete": true,
-							"syntax": "Packages/PHP/PHP.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 863.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"

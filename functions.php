@@ -9,6 +9,15 @@
  */
 
 //************* INCLUDES ********************/
+// Limit Post Title by amount of characters
+
+// Limit Post Title
+
+
+
+
+ 
+
 
 // Slightly Modified Options Framework
 require_once ('admin/index.php');
@@ -94,20 +103,20 @@ function bootstrap_scripts()
     wp_register_script( 'bootstrap-script', get_template_directory_uri() . '/library/js/bootstrap.min.js', array( 'jquery' ) );
     wp_register_script( 'modernizr-script', get_template_directory_uri() . '/library/js/modernizr.js', array( 'jquery' ) );
     wp_register_script( 'scrolltotop-script', get_template_directory_uri() . '/library/js/jquery.scrollToTop.js', array( 'jquery' ) );
-    // wp_register_script( 'jquery-ui' , 'https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.16/jquery-ui.min.js' );
+    //wp_register_script( 'custom-js', get_template_directory_uri() . '/library/js/custom.js', array( 'jquery' ) );
 	
 
 	//  enqueue the script:
 	wp_enqueue_script( 'bootstrap-script' );
 	wp_enqueue_script( 'modernizr-script' );
 	wp_enqueue_script( 'scrolltotop-script' );
- //  wp_enqueue_script( 'jquery-ui' );
+ //wp_enqueue_script( 'custom-js' );
 	
 }
 add_action( 'wp_enqueue_scripts', 'bootstrap_scripts' );
 add_action( 'wp_enqueue_scripts', 'modernizr-script' );
 add_action( 'wp_enqueue_scripts', 'scrolltotop-script' );
-// add_action( 'wp_enqueue_scripts', 'jquery-ui' );
+//add_action( 'wp_enqueue_scripts', 'custom-js' );
 
 function wpb_adding_scripts() {
 wp_register_script('main-script', get_template_directory_uri() . '/library/js/main.js','','1.1', true);
@@ -115,6 +124,27 @@ wp_enqueue_script('main-script');
 }
 add_action( 'wp_enqueue_scripts', 'wpb_adding_scripts' );  
 
+
+//Admin scripts
+
+global $pagenow;
+if (! empty($pagenow) && ('post-new.php' === $pagenow || 'post.php' === $pagenow ))
+    add_action('admin_enqueue_scripts', 'load_custom_wp_admin_script');
+
+
+function load_custom_wp_admin_script() {
+        wp_register_script( 'jQuery-min', get_template_directory_uri() . '/library/js/jquery.1.10.2.min.js', array( 'jquery' ) );
+        wp_register_script( 'custom-js', get_template_directory_uri() . '/library/js/custom.js', array( 'jquery' ) );
+    
+        wp_enqueue_script( 'jQuery-min' );
+        wp_enqueue_script( 'custom-js' );
+        
+}
+
+
+
+
+//bootsrtap
 
 function bootstrap_styles()
 {
@@ -151,6 +181,9 @@ if ( function_exists( 'add_theme_support' ) ) {
 		add_image_size( 'blog-feed-thumb', 180, 180, true ); //(cropped)
         
 }
+
+// Limit title
+
 /************* Menues ********************/
 
 //register Menues
@@ -162,16 +195,18 @@ register_nav_menus( array(
 
 /************** Meta Description ******************/
 // 'Custom Meta Description' field below post/page editor
+
 add_action('admin_menu', 'custom_meta_desc');
 add_action('save_post', 'save_custom_meta_desc');
 function custom_meta_desc() {
-add_meta_box('custom_meta_desc', 'Add meta description <small>(if left empty, the first 200 characters will be used. Use Max 160 characters for best SEO.)</small>', 'custom_meta_desc_input_function', 'post', 'normal', 'high');
-add_meta_box('custom_meta_desc', 'Add meta description <small>(if left empty, the first 200 characters will be used. Use Max 160 characters for best SEO.)</small>', 'custom_meta_desc_input_function', 'page', 'normal', 'high');
+add_meta_box('custom_meta_desc', 'Add meta description <small>(if left empty, the first 200 characters will be used. Use Max 160 characters.)</small> <span class="carleft"></span>', 'custom_meta_desc_input_function', 'post', 'normal', 'high');
+add_meta_box('custom_meta_desc', 'Add meta description <small>(if left empty, the first 200 characters will be used. Use Max 160 characters.)</small>', 'custom_meta_desc_input_function', 'page', 'normal', 'high');
 }
 function custom_meta_desc_input_function() {
 global $post;
 echo '<input type="hidden" name="custom_meta_desc_input_hidden" id="custom_meta_desc_input_hidden" value="'.wp_create_nonce('custom-meta-desc-nonce').'" />';
 echo '<input type="text" name="custom_meta_desc_input" id="custom_meta_desc_input" style="width:100%;" value="'.get_post_meta($post->ID,'_custom_meta_desc',true).'" />';
+
 }
 function save_custom_meta_desc($post_id) {
 if (!wp_verify_nonce($_POST['custom_meta_desc_input_hidden'], 'custom-meta-desc-nonce')) return $post_id;

@@ -69,6 +69,10 @@ DONE - My Twitter count Widget
 
 DONE - Integrated Google (XML) Sitemaps Generator for WordPress, just be cuss its damn good!
 
+DONE - Added Counter/limiter to meta data description filed. (160 characters)
+
+DONE - Added counter Title filed to ensure best SEO. (70 characters)
+
 Mostly Done- Total cleanup before version 1.0
 
 Check SEO* Working on it...
@@ -107,7 +111,7 @@ SOLVED - Drop down in menu broken, woops ;-)
 
 SOLVED - Off Canvas not working on pages
 
-Twitter widget error when activate plugins. page halt.
+SOLVED Twitter widget error when activate plugins. page halt.
 
 /////////////////////////////////////////////////////////////////////////////////////////
 OBS! Not recommended for use on a production/live site as is!
