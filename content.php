@@ -41,7 +41,7 @@
             <?php if ( function_exists( 'sharing_display' ) ) remove_filter( 'the_content', 'sharing_display', 19 ); ?>
 		<?php if ( function_exists( 'sharing_display' ) ) remove_filter( 'the_excerpt', 'sharing_display', 19 ); ?>
 		
-	  	<?php the_content('<button type="button" class="btn btn-primary btn-xs btn-post">Read more</button>'); ?>
+	  	<?php the_excerpt('...<button type="button" class="btn btn-primary btn-sm btn-post">Read more</button>'); ?>
 	  	
 	  	<hr class="meta-hr">
 	  	<section class="post-meta meta-options">

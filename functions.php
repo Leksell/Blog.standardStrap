@@ -162,7 +162,7 @@ add_action( 'wp_enqueue_scripts', 'bootstrap_styles' );
 
 /************* Read More ********************/
 function new_excerpt_more( $more ) {
-	return ' <a class="btn btn-primary btn-xs btn-post" href="'. get_permalink( get_the_ID() ) . '">Read More</a>';
+	return '... <a class="btn btn-primary btn-xs btn-post" href="'. get_permalink( get_the_ID() ) . '">Read More</a>';
 }
 add_filter( 'excerpt_more', 'new_excerpt_more' );
 

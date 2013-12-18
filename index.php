@@ -10,14 +10,29 @@
 <?php get_header(); ?>
 
 <div class="row row-offcanvas row-offcanvas-right">
+<div class="col-md-12">
+	 
+<?php
+$args = array( 'numberposts' => 1, );
+$postslist = get_posts( $args );
+foreach ($postslist as $post) :  setup_postdata($post); ?> 
+   <?php get_template_part( 'content', get_post_format() ); ?>
+<?php endforeach; ?>
+	
+</div>
+</div>
+<div class="row">
   <div class="col-md-9">
   
 
-	<?php if ( have_posts() ) : ?>
+	<?php query_posts('posts_per_page=6&offset=1'); if ( have_posts() ) : ?>
 
 			<?php /* The loop */ ?>
+	
 			<?php while ( have_posts() ) : the_post(); ?>
+
 				<?php get_template_part( 'content', get_post_format() ); ?>
+
 			<?php endwhile; ?>
 
 		
