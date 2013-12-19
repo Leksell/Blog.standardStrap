@@ -20,8 +20,8 @@
 
 							<div class="hero-unit">
 							
-								<h1>You broke the internet!</h1>
-								<p>Don't worry, lets look at our options here...</p>
+								<h1>We can't find what your looking for.</h1>
+								<p>But don't worry, lets look at our options here...</p>
 															
 							</div>
 													

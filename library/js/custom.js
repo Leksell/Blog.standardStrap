@@ -18,7 +18,7 @@
                 function checkLengthOnTitle() {
                     var len = $('#title').val().length;
                    
-                    $('#view-post-btn .button').text ((titleMaxlen - len) + " characters left");
+                    $('.wrap h2').text ("For best SEO you have " + (titleMaxlen - len) + " characters left");
                 }
 
 

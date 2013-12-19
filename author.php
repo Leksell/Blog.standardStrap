@@ -34,13 +34,13 @@
 
 			<?php /* The loop */ ?>
 			<?php while ( have_posts() ) : the_post(); ?>
-				<?php get_template_part( 'content', get_post_format() ); ?>
+				<?php get_template_part( 'excerpt', get_post_format() ); ?>
 			<?php endwhile; ?>
 
 		
 
 		<?php else : ?>
-			<?php get_template_part( 'content', 'none' ); ?>
+			<?php get_template_part( 'excerpt', 'none' ); ?>
 		<?php endif; ?>
 	  	
 	<?php if (  $wp_query->max_num_pages > 1 ) : ?>
