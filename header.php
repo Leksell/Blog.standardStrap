@@ -11,9 +11,39 @@
 		<meta charset="<?php bloginfo('charset'); ?>" />
 		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-		
-		
-		<title><?php wp_title('&#124;', true, 'right'); ?><?php bloginfo('name'); ?></title>
+		<meta name="resource-type" content="document" />
+		<meta http-equiv="content-language" content="en-us" />
+		<meta name="author" content="Frederik Leksell" />
+		<meta name="contact" content="info@frederik.se" />
+		<meta name="copyright" content="Copyright (c)2013 
+		Frederik Leksell. All Rights Reserved." />
+
+		<?php global $post;
+			if( is_single() || is_page() ) :
+				$tags = get_the_tags($post->ID);
+				if($tags) :
+			foreach($tags as $tag) :
+				$sep = (empty($keywords)) ? '' : ', ';
+				$keywords .= $sep . $tag->name;
+			endforeach;
+		?>
+		<meta name="keywords" content="<?php echo $keywords; ?>" />
+		<?php
+			endif;
+		endif;
+		?>
+	
+	<title>
+		   <?php
+  			global $page, $paged;
+  			wp_title('|', true, 'right');
+  			bloginfo('name');
+  			$site_description = get_bloginfo('description', 'display');
+  			if ($site_description && (is_home() || is_front_page())) { echo " | $site_description"; }
+  			if ( $paged >= 2 || $page >= 2 ) { echo ' | ' . sprintf('Page %s', max($paged, $page)); }
+  			?>
+	</title>
+		<!-- <meta name="ke" -->
 		<meta name="description" content="<?php
 if( is_single() || is_page() ) :
 $text = get_post_meta($post->ID,'_custom_meta_desc',true);
@@ -22,6 +52,10 @@ echo esc_attr(strip_tags(apply_filters('get_the_excerpt',$text)));
 else :
 /* optional area to program meta descriptions for index and archive pages, etc */
 endif; ?>" />
+
+
+
+
 
 			<?php if( bi_get_data('custom_favicon') !== '' ) : ?>
 				<link rel="icon" type="image/png" href="<?php echo bi_get_data('custom_favicon'); ?>" />
@@ -35,13 +69,17 @@ endif; ?>" />
 		<?php if( bi_get_data('tracking_header') ) : ?>
         <?php echo bi_get_data('tracking_header'); ?>
             <?php endif; ?>
+
+
 		<!-- wordpress head functions -->
 		<?php wp_head(); ?>
 		<!-- end of wordpress head -->
-				
+	
+
 	</head>
 	
 	<body <?php body_class(); ?>>
+
 		<!-- If landingpage, remove menu -->	
 <?php if ( is_page_template('page-landingpage.php') ) {} else { ?>
 

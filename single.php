@@ -21,12 +21,26 @@ get_header(); ?>
 
 					
 						<!--- Share Buttons here -->
-						<?php if ( function_exists( 'sharing_display' ) ) { echo '<div class="page-main">' . sharing_display() . '</div>' ; } ?>
+						<div class="page-main">
+							
+							<div class="social-button-container">
+								<div class="SocialCustomMenu">
+									<a class="scmTwitter" href="http://twitter.com/home?status=<?php the_title();?> - <?php echo wp_get_shortlink();?> by @FrederikLeksell"title="Tweet this!" target="_blank">Twitter</a>
+									<a class="scmLinkedIN" href="http://www.linkedin.com/shareArticle?mini=true&amp;url=<?php the_permalink();?>&amp;title=<?php the_title();?>&amp;summary=via @frederikleksell" target="_blank" title="Share on LinkedIn!">LinkedIn</a>
+									<a class="scmGoogleplus" href="https://plus.google.com/share?url=<?php the_permalink(); ?>"onclick="javascript:window.open(this.href,
+									  '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600px,width=600px');return false; "title="Share on Google +">Google +</a>
+									<!-- <a class="scmPinterest" href="http://pinterest.com/pin/create/button/?url=<?php the_permalink();?> - <?php echo wp_get_shortlink();?> "title="Share on Pinterest!">Pinterest</a> -->
+								</div>
+
+							</div>
+
+						</div>
 					
 					
 					<div class="single-main">
 					<div class="related-psots-box">
-					
+
+
 					    <div class="relatedposts clearfix">  
 						    <h4>Related posts</h4>  
 						    <?php  
@@ -68,8 +82,11 @@ get_header(); ?>
 			
 					</div> <!-- end #main -->
 					<div class="single-main">
-					
-					<?php comments_template('',true); ?>
+					    <?php if ( did_action( 'jetpack_comments_loaded' ) ) : ?>
+					    <?php comment_form(); ?>
+					    <?php else: ?>
+					    <?php comment_form(); ?><!-- here comes default theme's comment form -->
+					    <?php endif; ?>
 					</div> <!-- end single-main -->
 					
 			

@@ -75,11 +75,9 @@ DONE - Added counter Title filed to ensure best SEO. (70 characters)
 
 Mostly Done- Total cleanup before version 1.0
 
-Check SEO* Working on it...
+DOEN Check SEO
 
-Site Speed optimization* Working on it...
-
-
+DOEN Site Speed optimization* Working on it...
 
 
 

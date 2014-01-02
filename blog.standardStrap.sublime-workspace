@@ -4,6 +4,42 @@
 		"selected_items":
 		[
 			[
+				"pa",
+				"padding-bottom"
+			],
+			[
+				"stand",
+				"standardstrap_js"
+			],
+			[
+				"margin",
+				"margin-right"
+			],
+			[
+				"bor",
+				"border"
+			],
+			[
+				"border",
+				"border-radius"
+			],
+			[
+				"ca",
+				"category"
+			],
+			[
+				"get_cate",
+				"get_category"
+			],
+			[
+				"get_cat",
+				"get_cat_ID"
+			],
+			[
+				"heigh",
+				"heighlight"
+			],
+			[
 				"the_e",
 				"the_excerpt"
 			],
@@ -42,10 +78,6 @@
 			[
 				"padding",
 				"padding-left"
-			],
-			[
-				"margin",
-				"margin-bottom"
 			],
 			[
 				"the_p",
@@ -88,19 +120,27 @@
 	"buffers":
 	[
 		{
-			"contents": "/* \nTheme Name: Blog.standardStrap\nTheme URI: http://frederik.se/standardstrap\nDescription: Responsive WordPress theme with all the Twitter Bootstrap 3 elements and features. Also includes different page layouts, custom post types and much more.\n\nAuthor: Frederik Leksell \nAuthor URI: http://frederik.se\nVersion: 0.8.0\nTags: white, black, green, light, custom-menu, custom-header, custom-background, one-column, two-columns, left-sidebar, responsive, theme-options, threaded-comments, full-width-template, translation-ready, bootstrap 3\n\nCopyright (C) 2013 Frederik leksell \nLicense: GNU General Public License, version 3 (GPLv3)\nLicense URI: license.txt \n\n*/\n\n\nE2R87LpKIm0B2pk6lFcSg\n\nMFu2ODN0elU2OvAh1chNqEtonbuSFn6fsrSufo\n\n369444640-e6OFdBxu2O9Mz0f2ccEoUQTldgqJdb07MljKAhYK\n\nB6nlg71tNdEzbX8lORN2nvjxmyrwK6hC1qv00JS35Llld\n\n\nFrederikLeksell",
+			"contents": "/* \nTheme Name: Blog.standardStrap\nTheme URI: http://frederik.se/standardstrap\nDescription: Responsive WordPress theme with all the Twitter Bootstrap 3 elements and features. Also includes different page layouts, custom post types and much more.\n\nAuthor: Frederik Leksell \nAuthor URI: http://frederik.se\nVersion: 0.9.2\nTags: white, black, green, light, custom-menu, custom-header, custom-background, one-column, two-columns, left-sidebar, responsive, theme-options, threaded-comments, full-width-template, translation-ready, bootstrap 3\n\nCopyright (C) 2013 Frederik leksell \nLicense: GNU General Public License, version 3 (GPLv3)\nLicense URI: license.txt \n\n*/\n\n\nE2R87LpKIm0B2pk6lFcSg\n\nMFu2ODN0elU2OvAh1chNqEtonbuSFn6fsrSufo\n\n369444640-e6OFdBxu2O9Mz0f2ccEoUQTldgqJdb07MljKAhYK\n\nB6nlg71tNdEzbX8lORN2nvjxmyrwK6hC1qv00JS35Llld\n\n\nFrederikLeksell\n\n\n\n/////// Color - Categorys ///////\n/** Add New Field To Category **/\nfunction extra_category_fields( $tag ) {\n    $t_id = $tag->term_id;\n    $cat_meta = get_option( \"category_$t_id\" );\n?>\n<tr class=\"form-field\">\n    <th scope=\"row\" valign=\"top\"><label for=\"meta-color\"><?php _e('Category Color'); ?></label></th>\n    <td>\n        <div id=\"colorpicker\">\n            <input type=\"text\" name=\"cat_meta[catBG]\" class=\"colorpicker\" size=\"3\" style=\"width:20%;\" value=\"<?php echo (isset($cat_meta['catBG'])) ? $cat_meta['catBG'] : '#fff'; ?>\" />\n        </div>\n            <br />\n        <span class=\"description\"><?php _e(''); ?></span>\n            <br />\n        </td>\n</tr>\n<?php\n}\nadd_action ( 'category_add_form_fields', 'extra_category_fields');\nadd_action('category_edit_form_fields','extra_category_fields');\n\n/** Save Category Meta **/\nfunction save_extra_category_fileds( $term_id ) {\n\n    if ( isset( $_POST['cat_meta'] ) ) {\n        $t_id = $term_id;\n        $cat_meta = get_option( \"category_$t_id\");\n        $cat_keys = array_keys($_POST['cat_meta']);\n            foreach ($cat_keys as $key){\n            if (isset($_POST['cat_meta'][$key])){\n                $cat_meta[$key] = $_POST['cat_meta'][$key];\n            }\n        }\n        //save the option array\n        update_option( \"category_$t_id\", $cat_meta );\n    }\n}\nadd_action ( 'edited_category', 'save_extra_category_fileds');\n\n\n/** Enqueue Color Picker **/\nfunction colorpicker_enqueue() {\n    wp_enqueue_style( 'wp-color-picker' );\n    wp_enqueue_script( 'colorpicker-js', get_template_directory_uri() . '/functions/colorpicker.js', array( 'wp-color-picker' ) );\n}\nadd_action( 'admin_enqueue_scripts', 'colorpicker_enqueue' );",
 			"settings":
 			{
-				"buffer_size": 840,
+				"buffer_size": 2535,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "style.css",
+			"file": "/Users/Frederik/Downloads/CSS3-digital-clock/index.html",
 			"settings":
 			{
-				"buffer_size": 16340,
-				"line_ending": "Windows"
+				"buffer_size": 4262,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "functions.php",
+			"settings":
+			{
+				"buffer_size": 13639,
+				"line_ending": "Unix"
 			}
 		}
 	],
@@ -110,6 +150,10 @@
 		"height": 392.0,
 		"selected_items":
 		[
+			[
+				"tid",
+				"Tidy CSS (Highest Compression)"
+			],
 			[
 				"ti",
 				"Tidy CSS (Highest Compression)"
@@ -180,18 +224,30 @@
 	},
 	"file_history":
 	[
+		"/Users/Frederik/Sites/standardStrap/wp-content/themes/Blog.standardStrap/functions/shortcodes.php",
+		"/Users/Frederik/Sites/standardStrap/wp-content/themes/Blog.standardStrap/functions.php",
+		"/Users/Frederik/Sites/standardStrap/wp-content/themes/Blog.standardStrap/functions/Prism/prism.css",
+		"/Users/Frederik/Sites/standardStrap/wp-content/themes/Blog.standardStrap/functions/shortcoder/shortcoder.php",
+		"/Users/Frederik/Sites/standardStrap/wp-content/themes/Blog.standardStrap/functions/Prism/prism.js",
+		"/Users/Frederik/Sites/standardStrap/wp-content/themes/Blog.standardStrap/content.php",
+		"/Users/Frederik/Sites/standardStrap/wp-content/themes/Blog.standardStrap/single.php",
 		"/Users/Frederik/Sites/standardStrap/wp-content/themes/Blog.standardStrap/style.css",
+		"/Users/Frederik/Sites/standardStrap/wp-content/themes/Blog.standardStrap/functions/social_sharing.php",
+		"/Users/Frederik/Sites/standardStrap/wp-content/themes/Blog.standardStrap/archive.php",
+		"/Users/Frederik/Sites/standardStrap/wp-content/themes/Blog.standardStrap/search.php",
+		"/Users/Frederik/Sites/standardStrap/wp-content/themes/Blog.standardStrap/index.php",
+		"/Users/Frederik/Sites/standardStrap/wp-content/themes/Blog.standardStrap/author.php",
+		"/Users/Frederik/Sites/standardStrap/wp-content/themes/Blog.standardStrap/header.php",
+		"/Users/Frederik/Sites/standardStrap/wp-content/themes/Blog.standardStrap/admin/assets/js/colorpicker.js",
+		"/Users/Frederik/Sites/standardStrap/wp-content/themes/Blog.standardStrap/functions/prism/scripts/prism.js",
+		"/Users/Frederik/Sites/standardStrap/wp-content/themes/Blog.standardStrap/functions/prism/PrismHighlighter.php",
+		"/Users/Frederik/Sites/standardStrap/wp-content/themes/Blog.standardStrap/functions/prism/scripts/quicktag.js",
+		"/Users/Frederik/Sites/standardStrap/wp-content/themes/Blog.standardStrap/functions/google-code-prettify/prettify.css",
 		"/Users/Frederik/Sites/standardStrap/wp-content/themes/Blog.standardStrap/featured-image.php",
 		"/Users/Frederik/Sites/standardStrap/wp-content/themes/Blog.standardStrap/featured-quote.php",
 		"/Users/Frederik/Sites/standardStrap/wp-content/themes/Blog.standardStrap/featured-status.php",
 		"/Users/Frederik/Sites/standardStrap/wp-content/themes/Blog.standardStrap/featured.php",
-		"/Users/Frederik/Sites/standardStrap/wp-content/themes/Blog.standardStrap/index.php",
 		"/Users/Frederik/Sites/standardStrap/wp-content/themes/Blog.standardStrap/library/js/custom.js",
-		"/Users/Frederik/Sites/standardStrap/wp-content/themes/Blog.standardStrap/content.php",
-		"/Users/Frederik/Sites/standardStrap/wp-content/themes/Blog.standardStrap/functions.php",
-		"/Users/Frederik/Sites/standardStrap/wp-content/themes/Blog.standardStrap/search.php",
-		"/Users/Frederik/Sites/standardStrap/wp-content/themes/Blog.standardStrap/author.php",
-		"/Users/Frederik/Sites/standardStrap/wp-content/themes/Blog.standardStrap/archive.php",
 		"/Users/Frederik/Sites/standardStrap/wp-content/themes/Blog.standardStrap/404.php",
 		"/Users/Frederik/Sites/standardStrap/wp-content/themes/Blog.standardStrap/excerpt.php",
 		"/Users/Frederik/Sites/standardStrap/wp-content/themes/Blog.standardStrap/excerpt-image.php",
@@ -211,14 +267,12 @@
 		"/Users/Frederik/Sites/standardStrap/wp-content/themes/Blog.standardStrap/admin/functions/functions.php",
 		"/Users/Frederik/Sites/standardStrap/wp-content/themes/Blog.standardStrap/library/js/jquery.scrollToTop.js",
 		"/Users/Frederik/Sites/standardStrap/wp-content/themes/Blog.standardStrap/functions/lightbox/js/jquery.fancybox.pack.js",
-		"/Users/Frederik/Sites/standardStrap/wp-content/themes/Blog.standardStrap/single.php",
 		"/Users/Frederik/Sites/standardStrap/wp-content/themes/Blog.standardStrap/Edit Style.css",
 		"/Users/Frederik/Sites/standardStrap/wp-content/themes/Blog.standardStrap/functions/Widgets/Twitter-Widget.php",
 		"/Users/Frederik/Sites/standardStrap/wp-content/themes/Blog.standardStrap/functions/XML-Sitemap/sitemap-core.php",
 		"/Users/Frederik/Sites/standardStrap/wp-content/themes/Blog.standardStrap/functions/XML-Sitemap/sitemap-ui.php",
 		"/Users/Frederik/Sites/standardStrap/wp-content/themes/Blog.standardStrap/functions/XML-Sitemap/sitemap.php",
 		"/Users/Frederik/Sites/standardStrap/wp-content/themes/Blog.standardStrap/functions/Widgets/Twitter-count/Twitter-Widget.php",
-		"/Users/Frederik/Sites/standardStrap/wp-content/themes/Blog.standardStrap/header.php",
 		"/Users/Frederik/Sites/standardStrap/wp-content/themes/Blog.standardStrap/functions/xml-sitemap.php",
 		"/Users/Frederik/Sites/standardStrap/wp-content/themes/Blog.standardStrap/functions/Widgets/Social-Follow-Widget.php",
 		"/Users/Frederik/Sites/standardStrap/wp-content/themes/Blog.standardStrap/admin/functions/functions.options.php",
@@ -296,6 +350,11 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"share",
+			"social",
+			"#686e5d",
+			"#99A189",
+			"colorpicker.js",
 			"pem",
 			"cacert",
 			"cont",
@@ -345,6 +404,7 @@
 		"regex": false,
 		"replace_history":
 		[
+			"#A19989",
 			"social"
 		],
 		"reverse": false,
@@ -363,15 +423,15 @@
 					"buffer": 0,
 					"settings":
 					{
-						"buffer_size": 840,
+						"buffer_size": 2535,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								775,
-								775
+								723,
+								685
 							]
 						],
 						"settings":
@@ -480,7 +540,9 @@
 							},
 							"codeintel_tooltips": "popup",
 							"sublime_auto_complete": true,
-							"syntax": "Packages/CSS/CSS.tmLanguage"
+							"syntax": "Packages/CSS/CSS.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -490,18 +552,18 @@
 				},
 				{
 					"buffer": 1,
-					"file": "style.css",
+					"file": "/Users/Frederik/Downloads/CSS3-digital-clock/index.html",
 					"settings":
 					{
-						"buffer_size": 16340,
+						"buffer_size": 4262,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								16340
+								3708,
+								2247
 							]
 						],
 						"settings":
@@ -610,10 +672,142 @@
 							},
 							"codeintel_tooltips": "popup",
 							"sublime_auto_complete": true,
-							"syntax": "Packages/CSS/CSS.tmLanguage"
+							"syntax": "Packages/HTML/HTML.tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 1178.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "functions.php",
+					"settings":
+					{
+						"buffer_size": 13639,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								6531,
+								6531
+							]
+						],
+						"settings":
+						{
+							"codeintel": true,
+							"codeintel_config":
+							{
+								"JavaScript":
+								{
+									"codeintel_max_recursive_dir_depth": 2.0,
+									"codeintel_scan_files_in_project": false,
+									"javascriptExtraPaths":
+									[
+									]
+								},
+								"PHP":
+								{
+									"codeintel_max_recursive_dir_depth": 5.0,
+									"codeintel_scan_files_in_project": false,
+									"phpExtraPaths":
+									[
+									]
+								},
+								"Python":
+								{
+									"env":
+									{
+									}
+								}
+							},
+							"codeintel_enabled_languages":
+							[
+								"JavaScript",
+								"Mason",
+								"XBL",
+								"XUL",
+								"RHTML",
+								"SCSS",
+								"Python",
+								"HTML",
+								"Ruby",
+								"Python3",
+								"XML",
+								"Sass",
+								"XSLT",
+								"Django",
+								"HTML5",
+								"Perl",
+								"CSS",
+								"Twig",
+								"Less",
+								"Smarty",
+								"Node.js",
+								"Tcl",
+								"TemplateToolkit",
+								"PHP"
+							],
+							"codeintel_live": true,
+							"codeintel_live_enabled_languages":
+							[
+								"JavaScript",
+								"Mason",
+								"XBL",
+								"XUL",
+								"RHTML",
+								"SCSS",
+								"Python",
+								"HTML",
+								"Ruby",
+								"Python3",
+								"XML",
+								"Sass",
+								"XSLT",
+								"Django",
+								"HTML5",
+								"Perl",
+								"CSS",
+								"Twig",
+								"Less",
+								"Smarty",
+								"Node.js",
+								"Tcl",
+								"TemplateToolkit",
+								"PHP"
+							],
+							"codeintel_max_recursive_dir_depth": 10.0,
+							"codeintel_scan_exclude_dir":
+							{
+								"JavaScript":
+								[
+									"/build/",
+									"/min/"
+								]
+							},
+							"codeintel_scan_files_in_project": true,
+							"codeintel_selected_catalogs":
+							[
+								"PyWin32",
+								"jQuery",
+								"Rails"
+							],
+							"codeintel_snippets": true,
+							"codeintel_syntax_map":
+							{
+								"Python Django": "Python"
+							},
+							"codeintel_tooltips": "popup",
+							"sublime_auto_complete": true,
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 2543.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"

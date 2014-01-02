@@ -13,7 +13,10 @@
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 <div class="blog-main" >
+
 	<h1><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h1>
+
+
 <hr class="meta-hr">
   	<section class="post-meta meta-options">
                 <i class="fa fa-clock-o"></i>
